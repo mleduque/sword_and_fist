@@ -1,0 +1,460 @@
+BACKUP ~sword_and_fist/backup~
+SUPPORT ~http://gibberlings3.net/forums/index.php?showforum=120~
+
+ASK_EVERY_COMPONENT
+
+VERSION ~v9~
+README ~sword_and_fist/readme-sword_and_fist.html~
+
+ALWAYS
+  
+  ACTION_IF NOT VARIABLE_IS_SET ee_game THEN BEGIN
+	
+    INCLUDE ~sword_and_fist/lib/fl#add_kit_ee.tpa~
+    INCLUDE ~sword_and_fist/lib/functions.tpa~
+    
+    ACTION_DEFINE_ARRAY cdnoconvert BEGIN END // List of tra files that contain ONLY strings for the WeiDU installer and NOT game content
+    ACTION_DEFINE_ARRAY cdreload BEGIN ~setup~ END  // List of tra files that need to be reloaded after conversion because they were previously loaded in the LANGUAGE section
+    
+    // On EE games, convert game content tra files to utf-8 so that games don't crash when encountering international characters.
+    LAF HANDLE_CHARSETS INT_VAR infer_charsets = 1 STR_VAR default_language = ~english~ tra_path = EVAL ~sword_and_fist/languages~ noconvert_array = cdnoconvert reload_array = cdreload END
+    
+    // Load EE-specific text (usability section removed from item descriptions)
+    ACTION_IF GAME_IS ~bgee bg2ee iwdee eet~ THEN BEGIN
+	
+      OUTER_SET ee_game = 1
+    
+	END ELSE BEGIN
+    
+	  OUTER_SET ee_game = 0
+
+	END  
+
+  END
+
+END
+
+AUTO_TRA ~sword_and_fist/%s~
+LANGUAGE ~English~                                              ~english~ ~sword_and_fist/languages/english/setup.tra~ // language menu
+LANGUAGE ~German (by Thomas Schaefer)~                          ~german~  ~sword_and_fist/languages/english/setup.tra~ // language menu
+                                                                          ~sword_and_fist/languages/german/setup.tra~  // language menu
+LANGUAGE ~Polish (by yarpen)~                                   ~polish~  ~sword_and_fist/languages/english/setup.tra~ // language menu
+                                                                          ~sword_and_fist/languages/polish/setup.tra~  // language menu
+LANGUAGE ~Spanish (by Ghildrean)~                               ~spanish~ ~sword_and_fist/languages/english/setup.tra~ // language menu
+                                                                          ~sword_and_fist/languages/spanish/setup.tra~ // language menu
+LANGUAGE ~French (La Voix 2 la Sagesse from the d'Oghmatiques)~ ~french~  ~sword_and_fist/languages/english/setup.tra~ // language menu
+                                                                          ~sword_and_fist/languages/french/setup.tra~  // language menu
+LANGUAGE ~Italian (by Giuseppe)~                                ~italian~ ~sword_and_fist/languages/english/setup.tra~ // language menu
+                                                                          ~sword_and_fist/languages/italian/setup.tra~ // language menu
+LANGUAGE ~Russian (by Prowler and Hawkmoon)~                    ~russian~ ~sword_and_fist/languages/english/setup.tra~ // language menu
+                                                                          ~sword_and_fist/languages/russian/setup.tra~ // language menu
+
+BEGIN @100 DESIGNATED 1 // Monk Remix
+REQUIRE_PREDICATE ((GAME_IS ~bgee bg2ee iwdee eet~) OR ((GAME_IS ~soa tob bgt tutu tutu_totsc~ AND ("%WEIDU_OS%" STRING_COMPARE_CASE "win32" = 0)))) @0
+
+ACTION_IF GAME_IS ~bgee~ THEN BEGIN
+
+  STRING_SET 24234 @101 // New monk description
+  
+END ELSE ACTION_IF GAME_IS ~iwdee~ THEN BEGIN
+
+  STRING_SET 37256 @101 // New monk description
+
+END ELSE BEGIN
+
+  STRING_SET 45867 @101 // New monk description
+
+END
+
+COPY ~sword_and_fist/Monk_Remix/copy~ ~override~ // New CLABM01.2da and SAVEMONK.2da
+
+ACTION_IF ee_game BEGIN
+
+  COPY ~sword_and_fist/Monk_Remix/core/monkfist.2da~ ~override~
+
+END ELSE BEGIN
+
+  // BGMAIN hacking for proper monk fist placement
+  COPY ~BGMAIN.exe~ ~BGMAIN.exe~
+    SET "index" = 0
+    SET "block_one" = 0
+    SET "block_two" = 0
+    PATCH_IF (SOURCE_SIZE < 0x720000) BEGIN // if ToB isn't installed
+      SET "offset" = 0x6C7BA8
+    END
+    PATCH_IF (SOURCE_SIZE > 0x720000) BEGIN // if ToB is installed
+      SET "offset" = 0x737094
+    END
+    WHILE ("%index%" < 33750) BEGIN // checks through 270,000 bytes; SoA starts at 6E8B00, ToB starts at 757FEC
+      SET "index" = ("%index%" + 1)
+      READ_ASCII ("%offset%" - 0x08 + ("%index%" * 0x08)) ~previous_value~
+      READ_ASCII ("%offset%" +        ("%index%" * 0x08)) ~current_value~
+      PATCH_IF (("%current_value%" STRING_COMPARE_CASE ~MFIST1~ = 0) AND NOT ("%previous_value%" STRING_COMPARE_CASE ~MFIST1~ = 0) AND "block_one" = 0) BEGIN
+        WRITE_ASCII ("%offset%" + 0x08 + ("%index%" * 0x08)) ~MFIST1~  #8 // level 2
+        WRITE_ASCII ("%offset%" + 0x10 + ("%index%" * 0x08)) ~MFIST1~  #8 // level 3
+        WRITE_ASCII ("%offset%" + 0x18 + ("%index%" * 0x08)) ~MFIST2~  #8 // level 4
+        WRITE_ASCII ("%offset%" + 0x20 + ("%index%" * 0x08)) ~MFIST2~  #8 // level 5
+        WRITE_ASCII ("%offset%" + 0x28 + ("%index%" * 0x08)) ~MFIST2~  #8 // level 6
+        WRITE_ASCII ("%offset%" + 0x30 + ("%index%" * 0x08)) ~MFIST2~  #8 // level 7
+        WRITE_ASCII ("%offset%" + 0x38 + ("%index%" * 0x08)) ~MFIST3~  #8 // level 8
+        WRITE_ASCII ("%offset%" + 0x40 + ("%index%" * 0x08)) ~MFIST3~  #8 // level 9
+        WRITE_ASCII ("%offset%" + 0x48 + ("%index%" * 0x08)) ~MFIST4~  #8 // level 10
+        WRITE_ASCII ("%offset%" + 0x50 + ("%index%" * 0x08)) ~MFIST4~  #8 // level 11
+        WRITE_ASCII ("%offset%" + 0x58 + ("%index%" * 0x08)) ~MFIST5~  #8 // level 12
+        WRITE_ASCII ("%offset%" + 0x60 + ("%index%" * 0x08)) ~MFIST5~  #8 // level 13
+        WRITE_ASCII ("%offset%" + 0x68 + ("%index%" * 0x08)) ~MFIST5~  #8 // level 14
+        WRITE_ASCII ("%offset%" + 0x70 + ("%index%" * 0x08)) ~MFIST5~  #8 // level 15
+        WRITE_ASCII ("%offset%" + 0x78 + ("%index%" * 0x08)) ~MFIST6~  #8 // level 16
+        WRITE_ASCII ("%offset%" + 0x80 + ("%index%" * 0x08)) ~MFIST6~  #8 // level 17
+        WRITE_ASCII ("%offset%" + 0x88 + ("%index%" * 0x08)) ~MFIST6~  #8 // level 18
+        SET "block_one" = 1
+      END
+      PATCH_IF (("%current_value%" STRING_COMPARE_CASE ~MFIST7~ = 0) AND ("%previous_value%" STRING_COMPARE_CASE ~MFIST6~ = 0) AND "block_two" = 0) BEGIN // ToB only entries
+        SET "index2" = "%index%"
+        WRITE_ASCII ("%offset%" + 0x08  + ("%index%" * 0x08)) ~MFIST7~  #8 // level 20
+        WRITE_ASCII ("%offset%" + 0x10  + ("%index%" * 0x08)) ~MFIST7~  #8 // level 21
+        WRITE_ASCII ("%offset%" + 0x18  + ("%index%" * 0x08)) ~MFIST8~  #8 // level 22
+        WRITE_ASCII ("%offset%" + 0x20  + ("%index%" * 0x08)) ~MFIST8~  #8 // level 23
+        WRITE_ASCII ("%offset%" + 0x28  + ("%index%" * 0x08)) ~MFIST9~  #8 // level 24
+        WRITE_ASCII ("%offset%" + 0x30  + ("%index%" * 0x08)) ~MFIST9~  #8 // level 25
+        WRITE_ASCII ("%offset%" + 0x38  + ("%index%" * 0x08)) ~MFIST9~  #8 // level 26
+        WRITE_ASCII ("%offset%" + 0x40  + ("%index%" * 0x08)) ~MFIST9~  #8 // level 27
+        WRITE_ASCII ("%offset%" + 0x48  + ("%index%" * 0x08)) ~MFIST10~ #8 // level 28
+        WRITE_ASCII ("%offset%" + 0x50  + ("%index%" * 0x08)) ~MFIST10~ #8 // level 29
+        WRITE_ASCII ("%offset%" + 0x58  + ("%index%" * 0x08)) ~MFIST10~ #8 // level 30
+        WRITE_ASCII ("%offset%" + 0x60  + ("%index%" * 0x08)) ~MFIST10~ #8 // level 31
+        WRITE_ASCII ("%offset%" + 0x68  + ("%index%" * 0x08)) ~MFIST10~ #8 // level 32
+        WRITE_ASCII ("%offset%" + 0x70  + ("%index%" * 0x08)) ~MFIST10~ #8 // level 33
+        WRITE_ASCII ("%offset%" + 0x78  + ("%index%" * 0x08)) ~MFIST11~ #8 // level 34
+        WRITE_ASCII ("%offset%" + 0x80  + ("%index%" * 0x08)) ~MFIST11~ #8 // level 35
+        WRITE_ASCII ("%offset%" + 0x88  + ("%index%" * 0x08)) ~MFIST12~ #8 // level 36
+        WRITE_ASCII ("%offset%" + 0x90  + ("%index%" * 0x08)) ~MFIST12~ #8 // level 37
+        WRITE_ASCII ("%offset%" + 0x98  + ("%index%" * 0x08)) ~MFIST12~ #8 // level 38
+        WRITE_ASCII ("%offset%" + 0xA0  + ("%index%" * 0x08)) ~MFIST12~ #8 // level 39
+        WRITE_ASCII ("%offset%" + 0xA8  + ("%index%" * 0x08)) ~MFIST13~ #8 // level 40
+        WRITE_ASCII ("%offset%" + 0xB0  + ("%index%" * 0x08)) ~MFIST13~ #8 // level 41
+        SET "block_two" = 1
+      END
+      PATCH_IF ("%block_two%" = 1) BEGIN
+        WRITE_ASCII ("%offset%" +         ("%index2%" * 0x08)) ~MFIST6~ #8 // level 19
+        SET "block_two" = 2
+      END
+      PATCH_IF ("%block_two%" = 2) BEGIN
+        SET "index" = 33750
+      END
+    END
+
+END	
+
+COPY_EXISTING ~mfist1.itm~ ~override~ // Monk fist (level 1)
+  WRITE_BYTE 0x18 (THIS BAND `BIT6) // removes magical flag
+  LPF ALTER_ITEM_HEADER INT_VAR header_type = 1 thac0_bonus = 0 damage_bonus = 0 dicenumber = 1 dicesize = 6 END
+  BUT_ONLY
+
+ACTION_DEFINE_ASSOCIATIVE_ARRAY cd_monk_fists BEGIN
+  // enchantment, dice number, dice size => filename
+  //0, 1, 6  => mfist1 // level 1
+  0, 1, 8  => mfist2 // level 4
+  0, 1, 10 => mfist3 // level 8
+  1, 1, 10 => mfist4 // level 10
+  1, 2, 6  => mfist5 // level 12
+  2, 2, 8  => mfist6 // level 16
+  2, 2, 10 => mfist7 // level 20
+  3, 2, 10 => mfist8 // level 22
+  3, 3, 8  => mfist9 // level 24
+  4, 3, 8  => mfist10 // level 28
+  5, 3, 8  => mfist11 // level 34
+  5, 4, 6  => mfist12 // level 36
+  6, 4, 6  => mfist13 // level 40
+END
+
+ACTION_PHP_EACH cd_monk_fists AS params => file BEGIN
+
+  COPY_EXISTING ~mfist1.itm~ ~override/%file%.itm~ 
+    WRITE_BYTE 0x18 (THIS BOR BIT6) // adds magical flag
+    WRITE_LONG 0x60 params_0
+    LPF ALTER_ITEM_HEADER INT_VAR header_type = 1 dicenumber = params_1 dicesize = params_2 END
+
+END
+
+
+// Ability changes and additions
+COPY_EXISTING ~spcl811.spl~ ~override~ // Stunning Blow
+  SAY NAME1 @102
+  SAY NAME2 @102
+
+COPY_EXISTING ~spcl814.spl~ ~override~ // Immunity to haste, slow and disease; remove haste/slow immunity
+  LPF DELETE_EFFECT INT_VAR match_opcode = 101 match_parameter2 = 16 END // immunity to haste
+  LPF DELETE_EFFECT INT_VAR match_opcode = 206 STR_VAR match_resource = spin572 END // immunity to haste spell
+  LPF DELETE_EFFECT INT_VAR match_opcode = 206 STR_VAR match_resource = spin828 END // immunity to haste spell
+  LPF DELETE_EFFECT INT_VAR match_opcode = 206 STR_VAR match_resource = spra301 END // immunity to haste spell
+  LPF DELETE_EFFECT INT_VAR match_opcode = 206 STR_VAR match_resource = spwi305 END // immunity to haste spell
+  LPF DELETE_EFFECT INT_VAR match_opcode = 267 match_parameter1 = 14023 END // immunity to string "hasted"
+  LPF DELETE_EFFECT INT_VAR match_opcode = 269 match_parameter2 = 38 END // immunity to haste icon
+  LPF DELETE_EFFECT INT_VAR match_opcode = 101 match_parameter2 = 40 END // immunity to slow
+  LPF DELETE_EFFECT INT_VAR match_opcode = 206 STR_VAR match_resource = spwm164 END // immunity to slow spell
+  LPF DELETE_EFFECT INT_VAR match_opcode = 206 STR_VAR match_resource = spin977 END // immunity to slow spell
+  LPF DELETE_EFFECT INT_VAR match_opcode = 206 STR_VAR match_resource = spin983 END // immunity to slow spell
+  LPF DELETE_EFFECT INT_VAR match_opcode = 206 STR_VAR match_resource = spwish25 END // immunity to slow spell
+  LPF DELETE_EFFECT INT_VAR match_opcode = 206 STR_VAR match_resource = spwi312 END // immunity to slow spell
+  LPF DELETE_EFFECT INT_VAR match_opcode = 206 STR_VAR match_resource = spin575 END // immunity to slow spell
+  LPF DELETE_EFFECT INT_VAR match_opcode = 269 match_parameter2 = 41 END // immunity to slow icon
+  BUT_ONLY
+
+COPY_EXISTING ~spcl815.spl~ ~override~ // Lay On Hands -> Wholeness of Body
+  SAY NAME1 @103
+  SAY NAME2 @103
+
+COPY_EXISTING ~spcl819.spl~ ~override~ // magic resistance +3% > 1%
+  LPF ALTER_EFFECT INT_VAR match_opcode = 166 parameter1 = 1 END 
+  BUT_ONLY
+
+COPY ~sword_and_fist/Monk_Remix/core/NMMONK01.spl~ ~override~ // AC -1 penalty
+     ~sword_and_fist/Monk_Remix/core/NMMONK02.spl~ ~override~ // AC +1 bonus
+
+COPY ~sword_and_fist/Monk_Remix/core/NMMONK03.spl~ ~override~ // Flurry of Blows
+  SAY NAME1 @104
+  SAY NAME2 @104
+
+COPY_EXISTING ~spcl819.spl~ ~override/nmmonk04.spl~ // magic resistance +23%
+  LPF ALTER_EFFECT INT_VAR match_opcode = 166 parameter1 = 23 END 
+
+COPY ~sword_and_fist/Monk_Remix/core/NMMONK05.spl~ ~override~ // Empty Body
+  SAY NAME1 @105
+  SAY NAME2 @105
+
+BEGIN @3000 DESIGNATED 30
+
+ADD_KIT ~A#HEXBLADE~
+~A#HEXBLADE                 1           1           1           1           1 1           1           1~
+~A#HEXBLADE 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~A#HEXBLADE                 9      0      0      0       0      0~
+~A#HEXBLADE                 0       0       0       0       0       0~
+~A#HEXBLADE                 17      0      0       0       0      0~
+~A#HEXBLADE                 15      0      0       0       0      0~
+~A#HEXBLADE                 0       1       1       0       1       1       0 1       1~
+~A#HEXBLADE               0       0       0       0       0       0~
+~sword_and_fist/hexblade/A#HEX.2da~
+~K_F_H    K_F_D   K_F_G   K_F_E   K_F_HE   K_F_HL   K_F_HO~
+~0x00004000     2~
+~A#H~
+~LEAT20 DART03,40 HELM07 BAG26 RING06 RING31 CLCK27 BOOT01 AMUL19 BRAC10 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 BOW11 BOW19 XBOW06~
+SAY @3001
+SAY @3002
+SAY @3003
+LAF fl#add_kit_ee STR_VAR kit_name = ~A#HEXBLADE~ END
+
+COPY ~sword_and_fist/hexblade/LuA#H.2DA~ ~override/LuA#H.2DA~
+
+//Save bonus
+COPY ~sword_and_fist/hexblade/A#HEX01.SPL~ ~override/A#HEX01.SPL~
+
+// thac0 penalty
+COPY ~sword_and_fist/hexblade/A#HEX02.SPL~ ~override/A#HEX02.SPL~
+
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi612 destination = ~a#hex91~ END // pw silence
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi815 destination = ~a#hex92~ END // pw blind
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi715 destination = ~a#hex93~ END // pw stun
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = sppr113 destination = ~a#hex03~ END // doom
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi104 destination = ~a#hex11~ END // charm person
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi116 destination = ~a#hex12~ END // sleep
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi412 destination = ~a#hex04~ END // greater malison
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi206 destination = ~a#hex21~ END // invisibility
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi212 destination = ~a#hex22~ END // mirror image
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi311 destination = ~a#hex31~ END // pfnm
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi314 destination = ~a#hex32~ END // vampiric touch
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi405 destination = ~a#hex41~ END // improved invisibility
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = spwi415 destination = ~a#hex42~ END // polymorph other
+
+BEGIN @3100 DESIGNATED 31
+
+ADD_KIT ~A#DUELIST~
+~A#DUELIST                 1           1           1           1           1 1           1           1~
+~A#DUELIST 5 5 1 1 1 1 1 1 5 5 5 1 1 5 5 5 1 1 1 1 1 1 1 1 1 1 5 1 1 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~A#DUELIST                 9      0      0      0       0      0~
+~A#DUELIST                 0       0       0       0       0       0~
+~A#DUELIST                 17      0      0       0       0      0~
+~A#DUELIST                 15      0      0       0       0      0~
+~A#DUELIST                 1       1       1       1       1       1       1 1       1~
+~A#DUELIST                 0       1       1       1       1       0~
+~sword_and_fist/duelist/A#DUEL.2da~
+~K_F_H    K_F_D   K_F_G   K_F_E   K_F_HE   K_F_HL   K_F_HO~
+~0x00010000     2~
+~Fi0~
+~LEAT20 DART03,40 HELM07 BAG26 RING06 RING31 CLCK27 BOOT01 AMUL19 BRAC10 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 BOW11 BOW19 XBOW06~
+SAY @3101
+SAY @3102
+SAY @3103
+LAF fl#add_kit_ee STR_VAR kit_name = ~A#DUELIST~ END
+
+BEGIN @3200 DESIGNATED 32
+
+ADD_KIT ~A#FISTOO~
+~A#FISTOO                 1           1           1           1           1 1           1           1~
+~A#FISTOO 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~A#FISTOO                 9      0      0      0       0      0~
+~A#FISTOO                 0       0       0       0       0       0~
+~A#FISTOO                 17      0      0       0       0      0~
+~A#FISTOO                 15      0      0       0       0      0~
+~A#FISTOO                 0       1       1       0       0       1       0 0       0~
+~A#FISTOO                 0       1       1       1       1       0~
+~sword_and_fist/fistoforder/A#FIST.2da~
+~K_F_H    K_F_D   K_F_G   K_F_E   K_F_HE   K_F_HL   K_F_HO~
+~0x00004000     2~
+~Fi0~
+~LEAT20 DART03,40 HELM07 BAG26 RING06 RING31 CLCK27 BOOT01 AMUL19 BRAC10 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 BOW11 BOW19 XBOW06~
+SAY @3201
+SAY @3202
+SAY @3203
+LAF fl#add_kit_ee STR_VAR kit_name = ~A#FISTOO~ END
+
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = SPPR416 destination = ~A#FIST1~ END // cloak of fear
+
+// thac0 bonus
+COPY ~sword_and_fist/fistoforder/A#FIST2.SPL~ ~override/A#FIST2.SPL~
+
+// damage bonus
+COPY ~sword_and_fist/fistoforder/A#FIST3.SPL~ ~override/A#FIST3.SPL~
+
+BEGIN @3300 DESIGNATED 33
+
+ADD_KIT ~A#BLACKGUARD~
+~A#BLACKGUARD                 1           1           1           1           1 1           1           1~
+~A#BLACKGUARD 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~A#BLACKGUARD                 9      0      0      0       0      0~
+~A#BLACKGUARD                 0       0       0       0       0       0~
+~A#BLACKGUARD                 17      0      0       0       0      0~
+~A#BLACKGUARD                 15      0      0       0       0      0~
+~A#BLACKGUARD                 0       0       1       0       0       1       0 0       1~
+~A#BLACKGUARD                 0       0       0       0       0       0~
+~sword_and_fist/blackguard/A#BLKGD.2da~
+~K_F_H    K_F_D   K_F_G   K_F_E   K_F_HE   K_F_HL   K_F_HO~
+~0x00004000     2~
+~blk~
+~LEAT20 DART03,40 HELM07 BAG26 RING06 RING31 CLCK27 BOOT01 AMUL19 BRAC10 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 BOW11 BOW19 XBOW06~
+SAY @3301
+SAY @3302
+SAY @3303
+LAF fl#add_kit_ee STR_VAR kit_name = ~A#BLACKGUARD~ END
+
+// Lay on Hands: based on Monk version, name reset in case changed to Wholeness of Body by NiGHTMARE's stuff
+COPY_EXISTING ~SPCL815.SPL~ ~override/A#BLKLH.SPL~
+SAY NAME1 @3304
+SAY NAME2 @3304
+
+// Copy icons for new spells
+COPY ~sword_and_fist/blackguard/CDDTGOOA.BAM~ ~override~
+COPY ~sword_and_fist/blackguard/CDDTGOOB.BAM~ ~override~
+COPY ~sword_and_fist/blackguard/CDDTGOOB.BAM~ ~override~
+COPY ~sword_and_fist/blackguard/CDPRGOOA.BAM~ ~override~
+COPY ~sword_and_fist/blackguard/CDPRGOOB.BAM~ ~override~
+COPY ~sword_and_fist/blackguard/CDPRGOOB.BAM~ ~override~
+
+//Detect Good: thanks to Cam
+COPY ~sword_and_fist/blackguard/A#BLKDG.SPL~ ~override~
+  SAY NAME1 @3305
+  SAY NAME2 @3305
+
+// Protection from Good: thanks to Cam
+COPY_EXISTING ~SPPR107.spl~ ~override/A#BLKPG.spl~
+  SAY NAME1 @3306
+  SAY NAME2 @3306
+  WRITE_ASCII 0x3A ~CDPRGOOC~
+  LPF ALTER_EFFECT INT_VAR match_opcode = 139 parameter1 = RESOLVE_STR_REF (@2) END
+  LPF ALTER_EFFECT INT_VAR match_opcode = 219 parameter1 = 1 END
+  LPF ALTER_EFFECT INT_VAR match_opcode = 233 parameter1 = 2 silent = 1 END // for detectable spells
+  LPF ALTER_EFFECT INT_VAR match_opcode = 100 parameter1 = 156 parameter2 = 4 END
+  LPF ALTER_SPELL_HEADER STR_VAR icon = CDPRGOOB END
+  LPM andyr_spell_to_innate 
+
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = SPPR301 destination = ~A#BLKAD~ END // animate dead
+
+
+// Fallen Blackguard kit
+ADD_KIT ~A#FBLACKGUARD~
+~A#FBLACKGUARD                 1           1           1           1           1 1           1           1~
+~A#FBLACKGUARD 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~A#FBLACKGUARD                 9      0      0      0       0      0~
+~A#FBLACKGUARD                 0       0       0       0       0       0~
+~A#FBLACKGUARD                 17      0      0       0       0      0~
+~A#FBLACKGUARD                 15      0      0       0       0      0~
+~A#FBLACKGUARD                 0       0       1       0       0       1       0 0       1~
+~A#FBLACKGUARD                 0       0       0       0       0       0~
+~sword_and_fist/blackguard/A#FBLKGD.2da~
+~~
+~0x00004000     2~
+~Fi0~
+~LEAT20 DART03,40 HELM07 BAG26 RING06 RING31 CLCK27 BOOT01 AMUL19 BRAC10 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN04,2 POTN14,5 BOW11 BOW19 XBOW06~
+SAY @3307
+SAY @3308
+SAY @3309
+LAF fl#add_kit_ee STR_VAR kit_name = ~A#FBLACKGUARD~ END
+
+ACTION_IF GAME_INCLUDES ~tob~ THEN BEGIN // hla table and abilities if ToB is installed
+
+  COPY ~sword_and_fist/blackguard/lublk.2DA~ ~override~
+
+  LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = SPPR727 destination = ~A#BLK91~ END // summon deva
+
+END
+
+// Script extension to "fall"
+ACTION_FOR_EACH file IN baldur baldur25 bdbaldur BEGIN
+  ACTION_IF FILE_EXISTS_IN_GAME ~%script%.bcs~ THEN BEGIN
+    EXTEND_TOP ~%script%.bcs~ ~sword_and_fist/blackguard/baldur.baf~
+  END	
+END
+
+// Duskblade
+BEGIN @3400 DESIGNATED 34
+ADD_KIT ~KHDUSK~
+~KHDUSK                 1           1           1           1           0 1           1           1~
+~KHDUSK 2 2 0 2 2 2 2 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 0 0 0 0 0 2 2 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+~KHDUSK                 9      0      0      9       0      0~
+~KHDUSK                 0       0       0       0       0       0~
+~KHDUSK                 0      0      0       17       0      0~
+~KHDUSK                 0      0      0       15       0      0~
+~KHDUSK                 1       1       0       1       1       0       1 1       0~
+~KHDUSK               0       0       0       0       0       0~
+~sword_and_fist/duskblade/KHDUSK.2da~
+~K_F_H    K_F_D   K_F_G   K_F_E   K_F_HE   K_F_HL   K_F_HO~
+~0x40000008    2~
+~KHD~
+~CHAN01 SW1H01 HELM07 BAG26 RING06 RING31 CLCK27 BOOT01 AMUL19 BRAC10 BELT06 * * * POTN52,5 POTN04,2 POTN14,5 * * *~
+SAY @3401
+SAY @3402
+SAY @3403
+LAF fl#add_kit_ee STR_VAR kit_name = ~KHDUSK~ hpclass = HPBARB END
+
+ACTION_IF GAME_INCLUDES ~tob~ THEN BEGIN // hla table and abilities if ToB is installed
+
+  COPY ~sword_and_fist/duskblade/LuKHD.2DA~ ~override/LuKHD.2DA~
+
+END
+
+// Entropic Shield
+COPY ~sword_and_fist/duskblade/KHDUSK01.spl~ ~override~
+  SAY NAME1 @3404
+  SAY UNIDENTIFIED_DESC @3405
+  SAY 0x1c6 @3406
+  SAY 0x286 @3406
+  SAY 0x346 @3406
+  SAY 0x406 @3406
+  SAY 0x4c6 @3406
+  SAY 0x586 @3406
+  WRITE_SHORT 0x20 0                        // change from Cleric/Paladin to All Priests
+  LPM andyr_spell_to_innate 
+
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = SPWI003 destination = ~KHDUSK02~ END // magic missile
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = SPWI211 destination = ~KHDUSK03~ END // melf's acid arrow
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = SPWI302 destination = ~KHDUSK04~ END // remove magic
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = SPWI305 destination = ~KHDUSK05~ END // haste
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = SPWI412 destination = ~KHDUSK06~ END // greater malison
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = SPWI408 destination = ~KHDUSK07~ END // stoneskin
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = SPWI513 destination = ~KHDUSK08~ END // Breach
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = SPWI518 destination = ~KHDUSK09~ END // phantom blade
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = SPWI603 destination = ~KHDUSK10~ END // tenser's transformation
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = SPWI708 destination = ~KHDUSK11~ END // mantle
+LAF cd_clone_spell INT_VAR make_innate = 1 STR_VAR source = SPWI716 destination = ~KHDUSK12~ END // mordenkainen's sword
+
+COPY ~sword_and_fist/duskblade/ENTB.bam~ ~override/ENTB.bam~

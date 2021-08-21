@@ -1,0 +1,255 @@
+@0 = ~Ce composant n'est pas disponible pour votre jeu.~
+@1 = ~Vous avez violé le code de conduite des Chevaliers Noirs, votre divinité vous a retiré vos pouvoirs.~
+@2 = ~Protection contre le bien~
+@100   =~Revision des Moines~
+@101   =~MOINE : Les Moines sont des guerriers qui cherchent la perfection à travers la contemplation et l'action. La caractéristique principale du Moine réside dans son habileté à se battre sans arme ni armure. Grâce à un entraînement des plus rigoureux, ils sont capables de frapper plus fort et plus rapidement qu'un guerrier armé d'une épée.
+
+Les moines ne peuvent pas lancer de sorts, mais ils possèdent une magie qui leur est propre. Ils canalisent une énergie subtile, appelée 'Ki', qui leur permet de réaliser des exploits incroyables. Parmi ceux-ci, le plus connu  est leur aptitude à assommer un adversaire en le frappant sans arme. Lorsqu'un moine progresse en pouvoir et en expérience, ses aptitudes dépendant du Ki et les autres s'améliorent, lui accordant un meilleur contrôle sur lui-même et, parfois, sur les autres.
+
+Les moines peuvent être de n'importe quel alignement loyal.
+
+Avantages :
+- Gagne un bonus de +2 aux dégâts maximum de ses attaques à mains nues aux niveaux 1, 4, 8 et 12, puis un bonus de +4 aux niveaux 16, 20 et 24.
+- Gagne un bonus de +1 aux dégâts minimum de ses attaques à mains nues aux niveaux 12 et 24.
+- Gagne une demi-attaque supplémentaire par round lorsqu'il combat à mains nues tous les 3 niveaux (à partir du niveau 3, et jusqu'au niveau 18 pour un total de 4 attaques à mains nues par round).
+- Les attaques à mains nues sont considérées comme des armes magiques au niveau 4, +1 au niveau 10, +2 au niveau 16, +3 au niveau 22, +4 au niveau 28, +5 au niveau 34 et +6 au niveau 40.
+
+- Gagne un bonus de +1 à tous les jets de sauvegarde aux niveaux 2 et 9.
+- Gagne un bonus de +2 aux jets de sauvegarde contre les sorts au niveau 3.
+- Gagne un bonus de +1 à la classe d'armure tous les 5 niveaux (à partir du niveau 5).
+- Gagne un bonus de +1 à la classe d'armure contre les projectiles tous les trois niveaux (à partir du niveau 2).
+- Gagne un bonus de +1 à la vitesse de déplacement tous les 3 niveaux (à partir du niveau 3).
+- Immunité à la maladie au niveau 5.
+- Immunité au poison au niveau 11.
+- Gagne une résistance à la magie égale à son niveau +10 au niveau 13.
+- Immunité aux charmes au niveau 20.
+- Immunité aux armes non-magiques au niveau 20.
+
+- Peut utiliser la capacité 'Déluge de coups' une fois par jour. Le moine gagne alors une attaque supplémentaire ainsi qu'une pénalité de -4 au TAC0 lors du round suivant. Cette pénalité est réduite à -3 au niveau 5, -2 au niveau 9, et -1 au niveau 13.
+- Peut utiliser la capacité 'Coup étourdissant' une fois par jour et par niveau. Toutes les attaques portée par le moine lors du round suivant étourdissent l'opposant à moins d'un jet de sauvegarde réussi. NOTE : Cette faculté modifie automatiquement les attaques du moine, vous n'avez donc pas besoin de sélectionner une cible spécifique.
+- Peut utiliser la capacité 'Plénitude Physique' une fois par jour au niveau 7. Le moine récupère alors un nombre de points de vie égal au double de son niveau.
+- Peut utiliser la capacité 'Paume tremblante' une fois par jour au niveau 15. La prochaine attaque portée avec succès par le moine transmet des vibrations au corps de la cible, qui meurt instantanément à moins d'un jet de sauvegarde contre la mort réussi. NOTE : Cette faculté modifie automatiquement les attaques du moine, vous n'avez donc pas besoin de sélectionner une cible spécifique.
+- Peut utiliser la capacité 'Désertion de l'Âme' une fois par jour et par niveau au niveau 19. Le moine prend une forme éthérée pendant 1 round, devenant ainsi invisible et s'immunisant contre tous les dégâts, mais il ne pourra alors porter aucune attaque.
+
+- Peut utiliser les aptitudes de se cacher dans l'ombre et de déplacement silencieux.
+- Peut détecter les pièges.
+- Peut lire les parchemins destinés aux prêtres.
+
+Inconvénients :
+- Ne peut porter d'armure.
+- Ne peut porter de bouclier.
+- Ne peut manier que les armes à une main accessibles à la classe de voleur.
+- Ne peut manier deux armes en même temps.
+- Ne peut allouer de points de compétence qu'à ses armes permises.~
+@102   =~Coup étourdissant~
+@103   =~Plénitude Physique~
+@104   =~Déluge de coups~
+@105   =~Désertion de l'Âme~
+
+@3000 =~Installer le kit de guerrier : Champion Occultiste~
+@3001 =~champion occultiste~
+@3002 =~Champion Occultiste~
+@3003 =~CHAMPION OCCULTISTE : Le Champion Occultiste est autant un étudiant de l'art de la guerre que de l'art de la magie, ce qui fait de lui un ennemi redoutable sur le champ de bataille. Ce que recherchent les Champions Occultistes est avant tout le profit personnel, que cela se traduise par le pouvoir, la richesse, le prestige ou les trois en même temps. Le trait de caractère typique des Champions Occultistes est l'égoïsme, qui va parfois même jusqu'à la cruauté, et même le plus amical (du moins en surface) d'entre eux n'agira que selon ses propres intérêts. Leur sorcellerie spécialisée dans les malédictions les aide au combat.
+
+Les Champions Occultistes peuvent user de magie en armure, et peuvent adopter n'importe quel alignement neutre ou mauvais.
+
+Avantages :
+- Gagne un bonus de +1 aux jets de sauvegarde contre les sorts. Un bonus supplémentaire est accordé au niveau 11.
+- Peut lancer le sort 'Fatalité' une fois par jour tous les cinq niveaux.
+- A partir du niveau 4, peut lancer 'Charme-Personne' et 'Sommeil' une fois par jour. Une utilisation supplémentaire est accordée au niveau 8.
+- A partir du niveau 7, peut lancer 'Malédiction Majeure' une fois par jour. Une utilisation supplémentaire est accordée au niveau 14 et au niveau 20.
+- A partir du niveau 8, peut lancer 'Invisibilité' et 'Image Miroir' une fois par jour. Une utilisation supplémentaire est accordée au niveau 12.
+- A partir du niveau 12, peut lancer 'Protection contre les Projectiles Normaux' et 'Toucher Vampirique' une fois par jour. Une utilisation supplémentaire est accordée au niveau 16.
+- A partir du niveau 16, peut lancer 'Invisibilité Majeure' et 'Métamorphose d'Autrui' une fois par jour. Une utilisation supplémentaire est accordée au niveau 20.
+
+Inconvénients :
+- Ne peut que se spécialiser (2 points de compétence) dans les armes.
+- Le TAC0 n'augmente pas aux niveaux 4, 8, 12, 16 et 20.
+- Ne peut se jumeler.
+
+La table des Facultés de haut niveau d'un Champion Occultiste comprend, en sus des facultés habituelles pour un guerrier, les sorts 'Mot de Pouvoir : Silence', 'Mot de Pouvoir : Etourdissement' et 'Mot de Pouvoir : Cécité', utilisables une fois par jour. Ces sorts sont lancés de la même manière que les autres sorts du Champion Occultiste.~
+
+@3100 =~Installer le kit de guerrier : Duelliste~
+@3101 =~duelliste~
+@3102 =~Duelliste~
+@3103 =~DUELLISTE : Le Duelliste est un héros insouciant, à l'esprit aussi vif que sa rapière. C'est un guerrier redoutable où qu'il se trouve, même s'il préfère largement les environnements urbains. Ses ennemis le sous-estiment très souvent à cause de ses manières charmantes, et ne réalisent que trop tard qu'il se débrouille au combat aussi bien que n'importe qui d'autre. La grâce et la rapidité sont la marque de fabrique du Duelliste, dont l'agilité compense son dédain pour les armes et armures lourdes et encombrantes. Tirant parti de son charme naturel et de son intelligence, le Duelliste devient souvent chef de groupe... ou à tout le moins, porte-parole du chef de groupe.
+
+Les Duellistes peuvent être de toutes races et de tous alignements.
+
+Avantages :
+- Gagne un bonus de +1 au TAC0, aux dégâts et au facteur de vitesse tous les 10 niveaux.
+- Gagne un bonus de +1 à la classe d'armure tous les 5 niveaux.
+
+Inconvénients :
+- Le Duelliste ne peut atteindre la grande maîtrise que dans les lames à une main. Toutes les autres armes, ainsi que le style de combat à deux mains, sont limités à un point de compétence.
+- Ne peut porter d'armure plus lourde que le cuir clouté.~
+
+@3200=~Installer le kit de guerrier : Poing de l'Ordre~
+@3201=~poing de l'ordre~
+@3202=~Poing de l'Ordre~
+@3203=~POING DE L'ORDRE : Bien que nombreux sont ceux qui considèrent les Poings comme de simples mercenaires efficaces (mais brutaux), ce sont en fait de véritables templiers au service d'une divinité redoutable, habituellement Iyachtu Xvim, fils du dieu mort Baine, Seigneur de la Tyrannie, même si l'on peut aussi trouver des Poings dans tout autre clergé Loyal et militariste, comme celui de Helm, par exemple. D'après le clergé de Xvim, le monde est un univers impitoyable et sombre où les forts survivent en régnant sur les faibles et en imposant l'Ordre au Chaos. Pour conforter cette doctrine, l'Eglise a créé cette compagnie de templiers d'élite qui peut être engagée par ceux dont la cause sert le clergé (et qui ont bien entendu les moyens d'entretenir ce corps d'hommes et de femmes particulièrement bien entraînés et équipés). Les Poings sont réputés pour leur brutalité efficace : nulle part ailleurs un employeur ne trouvera mercenaires plus dévoués pour restaurer l'Ordre et pour combattre l'anarchie et le Chaos.
+
+Les Poings de l'Ordre peuvent être d'alignement Loyal-Mauvais, Neutre-Mauvais ou Loyal-Neutre. Ils préfèrent se consacrer au maniement de toutes les armes plutôt que de se spécialiser dans une seule, afin d'agir de la manière la plus appropriée selon la situation.
+
+Avantages :
+- Gagne un bonus de +1 au TAC0 tous les 6 niveaux.
+- A partir du niveau 4, gagne un bonus de +1 aux dégâts tous les 6 niveaux.
+- A partir du niveau 7, peut lancer le sort 'Manteau de Terreur' une fois par jour. Une utilisation supplémentaire est accordée au niveau 14 et au niveau 20.
+
+Inconvénient :
+- Ne peut que se spécialiser (2 points de compétence) dans les armes.~
+
+@3300=~Installer le kit de guerrier : Chevalier Noir~
+@3301=~chevalier noir~
+@3302=~Chevalier Noir~
+@3303=~CHEVALIER NOIR : Le Chevalier Noir est l'incarnation du Mal. Quintessence-même de la noirceur et de la vilenie, il mérite amplement sa réputation des plus diaboliques. Tout le monde le craint, et à raison ; pour preuve : les dieux malfaisants qu'il sert et les démons avec qui il s'acoquine. Certains vont jusqu'à l'appeler Anti-Paladin, eu égard à sa nature malfaisante.
+
+L'on peut comparer les Chevaliers Noirs avec les Paladins à juste titre. En effet, les Paladins servent leur divinité au nom du Bien et de la Loi, protégeant les créatures civilisées, là où les Chevaliers Noirs se dévouent à leur Dieu déchu et ont pour seul but d'augmenter leur pouvoir.
+
+Les Chevaliers Noirs peuvent être de n'importe quel alignement mauvais.
+
+Avantages :
+- Peut utiliser l'Imposition des Mains sur lui-même uniquement une fois par jour, se guérissant à hauteur de 2 points de vie par niveau.
+- Peut utiliser les capacités 'Détection du Bien' et 'Protection contre le Bien' trois fois par jour. Ces sorts fonctionnent de la même manière que 'Détection du Mal' et 'Protection contre le Mal', si ce n'est qu'ils ne s'appliquent qu'aux créatures bonnes.
+- A partir du niveau 5, peut enduire son arme de poison une fois par jour tous les 6 niveaux. Les attaques du round suivant inoculeront le poison à la cible, lui infligeant 1 point de dégâts par seconde pendant 24 secondes (3 points de dégâts lors des 6 premières secondes). Un jet de sauvegarde réussi contre le poison limite ces dégâts à un total de 12.
+- A partir du niveau 7, peut lancer le sort 'Animation des Morts' une fois par jour. Une utilisation supplémentaire est accordée aux niveaux 14 et 20.
+
+Inconvénients :
+- Ne peut que se spécialiser (2 points de compétence) dans les armes.
+- Ne peut se jumeler.
+- Un Chevalier Noir dont la réputation excède 14, ou qui cesse d'être d'alignement mauvais, est maudit à tout jamais par sa divinité et perd tous ses pouvoirs spéciaux. Il est alors considéré comme un guerrier, si ce n'est le fait qu'il est toujours limité à la spécialisation dans les armes.
+
+La table des Facultés de haut niveau d'un Chevalier Noir est la même que celle d'un Guerrier, avec en plus le sort 'Convocation de Déva Déchue'.~
+@3304=~Imposition des Mains~
+@3305=~Détection du Bien~
+@3306=~Protection contre le Bien~
+@3307=~chevalier noir déchu~
+@3308=~Chevalier Noir Déchu~
+@3309=~CHEVALIER NOIR DECHU : Ancien Chevalier Noir ayant commis de trop nombreux actes de bonté, vous avez été abandonné par votre divinité. Vous avez été privé de vos pouvoirs, et vous vous retrouvez seul pour survivre comme vous le pourrez.~
+
+@3400=~Installer le kit de guerrier : Magelame (by ronin69hof, ronin69hof@gmail.com)~
+@3401=~magelame~
+@3402=~Magelame~
+@3403=~MAGELAME : Mêler les arts de l'escrime et de la magie est une prouesse qu'accomplit pleinement le Magelame, dont nul ne peut dire s'il est un guerrier ayant acquis quelques talents magiques ou un magicien qui a appris à se battre. Fruit de longues études sur d'anciennes techniques elfiques d'incantation, le Magelame combine la maîtrise de la magie et les techniques martiales d'un guerrier. L'aptitude à lancer des sorts en armure était, à l'origine, une prouesse réservée aux seuls elfes. Néanmoins, au fils des millénaires, les autres races ont eu accès au savoir secret des Magelames, ce qui fait que quiconque aujourd'hui peut en devenir un.
+
+Les Magelames ont la capacité d'user de magie en armure, à condition qu'elle ne soit pas plus encombrante qu'une armure feuilletée, et peuvent adopter n'importe quel alignement non-maléfique.
+
+Avantages :
+- A partir du niveau 4, peut lancer 'Bouclier Entropique' et 'Projectile Magique' une fois par jour. Une utilisation supplémentaire est accordée au niveau 8 et au niveau 12. Le sort de 'Bouclier Entropique' crée une barrière magique conférant une légère protection contre les attaques à distance. Cette barrière a 20% de chances de détourner les projectiles visant le lanceur. Elle dure 5 rounds par tranche de 4 niveaux.
+- A partir du niveau 7, peut lancer 'Flèche Acide de Melf' une fois par jour. Une utilisation supplémentaire est accordée au niveau 14 et au niveau 20.
+- A partir du niveau 8, peut lancer 'Délivrance de la Magie' et 'Hâte' une fois par jour. Une utilisation supplémentaire est accordée au niveau 12.
+- A partir du niveau 12, peut lancer 'Malédiction Majeure' et 'Peau de Pierre' une fois par jour. Une utilisation supplémentaire est accordée au niveau 16.
+- A partir du niveau 16, peut lancer 'Brèche' et 'Lame Fantôme' une fois par jour. Une utilisation supplémentaire est accordée au niveau 20.
+
+Inconvénients :
+- Ne peut que se spécialiser (2 points de compétence) dans les armes.
+- Ne peut se jumeler.
+- Ne peut utiliser d'arcs ou d'armes à projectiles.
+- Ne peut porter d'armure plus lourde que les armures feuilletées.
+
+La table des Facultés de haut niveau d'un Magelame comprend, en sus des facultés habituelles pour un guerrier, les sorts 'Transformation de Tenser', 'Manteau' et 'Epée de Mordenkainen', utilisables une fois par jour. Ces sorts sont lancés de la même manière que les autres sorts du Magelame.~
+@3404=~Bouclier Entropique~
+@3405=~Bouclier Entropique (Abjuration)
+
+Niveau : 1
+Zone d'effet : Lanceur
+Durée: 5 rounds / 4 niveaux
+Temps d'incantation : 1
+
+Ce sort crée une barrière magique conférant une légère protection contre les attaques à distance. Cette barrière a 20% de chances de détourner les projectiles visant le lanceur. Elle dure 5 rounds par tranche de 4 niveaux.~
+@3406=~Vous avez invoqué un bouclier entropique.~
+
+
+// WeiDU prompts
+@-1000= "Le mod %TP2_FILE_NAME% contient"
+@-1001= "composants optionnels distincts.
+Pour gagner du temps, vous pouvez choisir ce que vous souhaitez faire d'eux
+au niveau general plutot que de repondre aux questions pour chacun.
+"
+@-1002= "Que faut-il faire de tous les composants qui NE sont PAS ENCORE installes ?
+Les [I]nstaller, les [S]auter, dem[A]nder pour chacun ? "
+@-1003= "Que faut-il faire de tous les composants qui sont DEJA installes ?
+Les [R]einstaller, les s[U]pprimer, les [S]auter, dem[A]nder pour chacun ? "
+
+@-1004= "S'IL VOUS PLAIT, envoyez par e-mail le fichier"
+@-1005= "a"
+
+@-1006= "Installer le composant ["
+@-1007= "] ?
+[R]einstaller, co[N]server, s[U]pprimer ou [Q]uitter ? "
+@-1008= "] ?
+[I]nstaller, [N]e pas installer ou [Q]uitter ? "
+
+@-1009= "Entrez une partie du nom du module : "
+
+@-1010= "Reinstallation du composant ["
+@-1011= "] "
+@-1012= "Reinstallation dans la langue"
+
+@-1013= "Suppression de l'ancienne installation de ["
+@-1014= "] au prealable..."
+@-1015= "SUPPRESSION REUSSIE DE L'ANCIEN"
+
+@-1016= "Installation en cours"
+@-1017= "ERREUR pendant l'installation de ["
+@-1018= "], retour a l'etat anterieur"
+@-1019= "INSTALLATION REUSSIE"
+@-1020= "Saute"
+@-1021= "Suppression de ["
+@-1022= "] (composant #"
+@-1023= ")"
+@-1024= "SUPPRESSION REUSSIE DE ["
+
+@-1025= "] ?
+[R]einstaller, co[N]server, s[U]pprimer, [Q]uitter ou choisir un parmi :"
+@-1026= "] ?
+[N]e pas installer, [Q]uitter ou choisir un parmi :"
+@-1027= " (installe actuellement)"
+
+@-1028= "Souhaitez-vous afficher les composants de ["
+@-1029= "] ?
+[Y]Oui, [N]on ? "
+
+@-1030= "] ?
+choisir un parmi :"
+@-1031= "] ?
+[R]einstaller, co[N]server, [Q]uitter ou choisir un parmi :"
+@-1032= "INSTALLATION ECHOUEE A CAUSE D'ERREURS"
+@-1033= "INSTALLATION AVEC DES ALERTES"
+@-1034= "Souhaitez-vous afficher les instructions (ReadMe) ? [Y]Oui [N]on"
+@-1035= "Dans la langue"
+
+@-1036= "Saute le GROUPE ["
+@-1037= "] pour cause d'absence des pre-requis."
+
+@-1038= "dem[A]nder pour chaque composant, tout [S]auter, ou choisir une selection pre-definie :"
+@-1039= "dem[A]nder pour chaque composant, [R]einstaller la configuration courante, tout s[U]pprimer, tout [S]auter, ou choisir une selection pre-definie :"
+
+@-1040= "
+Veuillez choisir la langue dans laquelle vous souhaitez jouer au jeu.
+Si par la suite vous desirez jouer au jeu dans une langue differente, il vous
+faudra editer le fichier weidu.conf et reinstaller vos mods.
+"
+@-1041= "Tcheque"
+@-1042= "Allemand"
+@-1043= "Anglais"
+@-1044= "Espagnol"
+@-1045= "Francais"
+@-1046= "Italien"
+@-1047= "Polonais"
+@-1048= "Portugais"
+@-1049= "Turc"
+@-1050= "Japonais"
+@-1051= "Coreen"
+@-1052= "Chinois simplifie"
+@-1053= "Russe"
+@-1054= "Ukrainien"
+
+@-1060= "
+Ce jeu est disponible en plusieurs langues mais WeiDU ne sait pas laquelle a ete choisie quand ce mod a ete installe.
+
+Veuillez indiquer quelle langue du jeu a ete utilisee quand vous avez installe ce mod. Votre choix servira jusqu'a ce que WeiDU s'arrete mais ne sera pas memorise.
+"
+@-1061= "
+Utilisation de"
+@-1062= " et "

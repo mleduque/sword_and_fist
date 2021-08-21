@@ -1,0 +1,193 @@
+@1 = ~Habéis violado el código de conducta del Guardia Negro y habéis sido despojado de vuestros poderes por vuestra deidad.~
+@100   =~Monk Remix~
+@101   =~MONJE: Los monjes son combatientes que buscan la perfección por medio de la contemplación y la acción.
+
+Son guerreros versátiles, y especialmente hábiles en el combate sin armas ni armadura.
+
+Aunque no pueden lanzar conjuros, poseen una especie de magia propia: pueden canalizar una energía sutil, llamada ki, que les permite llevar a cabo hazañas sorprendentes.
+
+La más famosa es su capacidad para atontar a sus oponentes golpeando con la mano desnuda.
+
+VENTAJAS:
+
+- Obtienen un bonificador de +2 al daño máximo desarmado a niveles 1, 4, 8 y 12, y un bonificador de +4 a niveles 16, 20 y 24.
+- Obtienen un bonificador de +1 al daño mínimo desarmado a niveles 12 y 24.
+- Obtienen medio ataque extra por asalto por cada tres niveles (comienzan a nivel 3 y finaliza a nivel 18 con un total de 4 ataques desarmados por asalto).
+- Los puños son considerados armas mágicas a nivel 4, +1 a nivel 10, +2 a nivel 16, +3 a nivel 22, +4 a a nivel 28, +5 a nivel 34, y +6 a nivel 40.
+- Obtienen un bonificador de +1 a todas las tiradas de salvación a niveles 2 y 9.
+- Obtienen un bonificador de +2 a las tiradas de salvación contra conjuros a nivel 3.
+- Obtienen un bonificador de +1 a la Clase de Armadura por cada cinco niveles (comienzan a nivel 5).
+- Obtienen un bonificador de +1 a la Clase de Armadura contra proyectiles por cada tres niveles (comienzan a nivel 2).
+- Obtienen un bonificador de +1 al factor de movimiento por cada tres niveles (comienzan a nivel 3).
+- Obtienen inmunidad a la enfermedad a nivel 5.
+- Obtienen inmunidad al veneno a nivel 11.
+- Obtienen una resistencia mágica igual a su nivel actual + 10 a partir del nivel 13.
+- Obtienen inmunidad al hechizo a nivel 20.
+- Obtienen inmunidad a las armas no mágicas a nivel 20.
+- Pueden utilizar la habilidad de 'Ráfaga de Golpes' a voluntad. El monje obtiene un ataque adicional por asalto durante el próximo turno, pero también sufre de un penalizador de -4 al THAC0. Este penalizador se reduce a -3 a nivel 5, -2 a nivel 9, y -1 a nivel 13.
+- Pueden utilizar la habilidad de 'Puñetazo Aturdidor' una vez al día por nivel. Todos los ataques realizados por el monje durante el siguiente asalto fuerzan a la víctima a realizar una salvación o quedar atontado. NOTA: esta habilidad especial modifica automaticamente el ataque normal del Monje, por lo que no hace falta elegir objetivo.
+- Pueden utilizar la habilidad de 'Integridad de Cuerpo' una vez al día a partir del nivel 7. El Monje sana un número de sus propios puntos de golpe igual a dos veces su nivel actual.
+- Pueden utilizar la habilidad de 'Palma Temblorosa' una vez al día a partir del nivel 15. El siguiente ataque cuerpo a cuerpo con éxito del Monje ejerce una serie de vibraciones sobre el cuerpo del objetivo, forzándolo a realizar una salvación contra muerte o morir. NOTA: esta habilidad especial modifica automaticamente el ataque normal del Monje, por lo que no hace falta elegir objetivo.
+- Pueden utilizar la habilidad de 'Cuerpo Vacío' una vez al dia a partir del nivel 19. El Monje asume un estado etéreo durante 1 asalto, volvíendose invisible e inmune a todos los tipos de daño, pero también lo incapacita de realizar cualquier ataque.
+- Pueden utilizar las habilidades de Esconderse en las Sombras y Sigilo.
+- Pueden utilizar la habilidad de Encontrar Trampas.
+- Pueden leer pergaminos de sacerdote.
+
+DESVENTAJAS:
+
+- No pueden utilizar ninguna armadura.
+- No pueden utilizar ningún escudo.
+- Sólo pueden utilizar espadas largas, espadas cortas, katanas, cimitarras, wakizashis, ninja-tos, dagas, clavas, dardos y hondas.
+- No pueden utilizar el estilo de dos armas.
+- Sólo pueden ser de alineamiento Legal.~
+@102   =~Puñetazo Aturdidor~
+@103   =~Integridad de Cuerpo~
+@104   =~Ráfaga de Golpes~
+@105   =~Cuerpo Vacío~
+
+@3000 =~Instalar kit de luchador Filo Aojador~
+@3001 =~filo aojador~
+@3002 =~Filo Aojador~
+@3003 =~FILO AOJADOR: Combinando los poderes dinámicos de la destreza marcial y el poder arcano, el Filo Aojador presentan un reto mortal para los oponentes no acostumbrados a ellos.
+
+Los Filos Aojadores se aventuran por ganancias personales, ya sea ganar poder, prestigio, riqueza, o cualquier otra cosa.
+
+El estilo del Filo Aojador es egoísta, algunas veces incluso cruel, e incluso el parecer más amistoso del Filo Aojador es tipicamente egoísta.
+
+Sus magias lo ayudan en combate, y se especializan en maldecir a sus enemigos.
+
+VENTAJAS:
+
+- Obtienen un bonificador de +1 a las salvaciones contra conjuros. Obtienen un bonificador +1 adicional a nivel 11.
+- Pueden lanzar Fatalidad una vez al día por cada cinco niveles.
+- A partir del nivel 4, pueden lanzar Hechizar Persona y Sueño una vez al día cada uno. Un uso adicional se obtiene a nivel 8.
+- A partir del nivel 7, pueden lanzar Malisón Mayor una vez al día. Usos adicionales se obtienen a los niveles 14 y 20.
+- A partir del nivel 8, pueden lanzar Invisibilidad e Imagen Espejada una vez al día cada uno. Un uso adicional se obtiene a nivel 12.
+- A partir del nivel 12, pueden lanzar Protección Contra Proyectiles Normales y Toque Vampírico una vez al día cada uno. Un uso adicional se obtiene a nivel 16.
+- A partir del nivel 16, pueden lanzar Invisibilidad Mejorada y Polimorfar a Otro una vez al día cada uno. Un uso adicional se obtiene a nivel 20.
+- Pueden obtiener como habilidad de alto nivel Palabra de Poder: Ceguera, Palabra de Poder: Silencio y Palabra de Poder: Atontar, con un uso diario cada una.
+
+DESVENTAJAS:
+
+- Sólo pueden asignar hasta dos casillas de talentos marciales.
+- El THAC0 no mejora a los niveles 4, 8, 12, 16 y 20.
+- No pueden ser de alineamiento Bueno.
+- No pueden ser de clase dual.~
+
+@3100 =~Instalar kit de luchador Duelista~
+@3101 =~duelista~
+@3102 =~Duelista~
+@3103 =~DUELISTA: El Duelista es el héroe afortunado y feliz con la agudeza lista y el estoque rápido.
+
+Es feliz cuando está en la gran ciudad, pero puede ser un guerrero imponente en cualquier lugar o contra cualquier enemigo que lo subestime debido a sus encantadoras maneras y no se de cuenta de que puede utilizar su propio estilo cuerpo a cuerpo tan bien como cuaquier otro.
+
+Atacando con una velocidad y una gracia característica, la agilidad del Duelista compensa su desdén por las armaduras pesadas y las armas grandes.
+
+El Duelista, debido a que es brillante y bien hablado, a veces se convierte en el líder del grupo... o al menos portavoz del líder.
+
+Se encuentran Duelistas de todas las razas y alineamientos.
+
+VENTAJAS:
+
+- Obtienen un bonificador de +1 al factor de velocidad del arma, THAC0 y daño por cada 10 niveles.
+- Obtienen un bonificador de +1 a la Clase de Armadura por cada cinco niveles.
+
+DESVENTAJAS:
+
+- Sólo pueden adquirir cinco casillas de talento marcial en las armas de espada a una mano. Las demás armas, y el estilo de Arma a Dos Manos, están limitados a una casilla de talento.
+- No pueden utilizar armaduras mejores que las de cuero tachonado.~
+
+@3200=~Instalar kit de luchador Puño de la Orden~
+@3201=~puño de la orden~
+@3202=~Puño de la Orden~
+@3203=~PUÑO DE LA ORDEN: Mientras que muchos ven a los Puños como unos simples y eficientes (incluso brutales) mercenarios, son en realidad templarios implacables al servicio de sus implacables dioses--normalmente Iyachtu Xvim, hijo del muerto Bane, Señor de la Tiranía.
+
+Los miembros a veces son encontrados entre las otras deidades legales y militaristas, tales como Helm.
+
+El mundo es un lugar oscuro e implacable, o eso dice la Iglesia de Xvim, donde los fuertes sobreviven dirigiendo a los débiles y forjando el orden a partir del caos.
+
+Para apoyar este dogma, la Iglesia estableció a esta compañía de templarios de élite y están disponibles como alquiler para aquellos cuyas causas complementen las metas finales de la Iglesia (y para aquellos que puedan, naturalmente, pagar el pesado diezmo necesario para mantener una unidad de primera categoría de bien armados y entrenados hombres y mujeres).
+
+Los Puños son infames debido a su eficiente brutalidad: en ningún lugar se encontrará una ayuda militar mejor que buscar a estos dedicados mercenarios para asegurar que las reglas del orden prevalezcan sobre las fuerzas de la anarquía y la confusión.
+
+VENTAJAS:
+
+- Obtienen un bonificador de +1 al THAC0 por cada seis niveles.
+- A partir del nivel 4, obtienen un bonificador de +1 al daño por cada seis niveles.
+- A partir del nivel 7, pueden lanzar Capa de Miedo una vez al día. Obtienen usos adicionales a los niveles 14 y 20.
+
+DESVENTAJAS:
+
+- Sólo pueden obtener hasta dos casillas de talento marcial en armas.
+- Deben ser de alineamiento Legal Maligno, Neutral Maligno o Legal Neutral.~
+
+@3300=~Instalar kit de luchador Guardia Negro~
+@3301=~guardia negro~
+@3302=~Guardia Negro~
+@3303=~GUARDIA NEGRO: El Guardia Negro representa el mal.
+
+La quintaesencia del caballero negro, este villano porta una reputación de lo más vil que es verdaderamente merecida.
+
+Acompañado por demonios y sirvientes de oscuras deidades, el Guardia Negro es temido por todos.
+
+Algunas personas llaman a estos villanos anti-paladines debido a su naturaleza completamente maligna.
+
+La comparación con los paladines es apta, ya que mientras que los paladines sirven a su deidad en el nombre de la ley y el bien, para beneficio de todas las criaturas civilizadas, el Guardia Negro the Blackguard realiza los deseos de su maestro y busca incrementar sólo su propio poder.
+
+VENTAJAS:
+
+- Pueden utilizar Imposición de Manos sobre sí mismos una vez ak día, curando al Guardia Negro 2 puntos de golpe por nivel.
+- Pueden lanzar Detectar el Bien y Protección Contra el Bien cada uno de ellos tres veces al día. Estos son análogos a Detectar el Mal y Protección Contra el Mal, excepto que se realizan contra criaturas del bien.
+- A partir del nivel 5, pueden impregnar su arma con veneno una vez al día por cada seis niveles. Los ataques hechos durante el siguiente asalto inyectarán en la víctima el veneno, causándole un punto de daño por segundo durante 24 segundos (3 puntos de daño durante los primeros 6 segundos). Una tirada de salvación contra veneno limitará el daño total a 12.
+- A partir del nivel 7, pueden lanzar Reanimar a los Muertos una vez al día. Obtienen un uso adicional a niveles 14 y 20.
+- Pueden obtener como habilidad de alto nivel el conjuro Convocar Deva Caída.
+
+DESVENTAJAS:
+
+- Sólo pueden asignar hasta dos casillas de talento marcial en armas.
+- No pueden ser de clase dual.
+- Deben ser de alineamiento Maligno.
+- Un Guardia Negro cuya reputación exceda de 14, o deje de ser de alineamiento Maligno, quedará para siempre maldito por su deidad y perderá todos sus poderes especiales. Será tratado como un Luchador, excepto que sigue pudiendo asignar solamente dos casillas de talentos marciales.~
+@3304=~Imposición de Manos~
+@3305=~Detectar el Bien~
+@3306=~Protección contra el Bien~
+@3307=~ex-guardia negro~
+@3308=~Ex-Guardia Negro~
+@3309=~EX-GUARDIA NEGRO: Un antiguo Guardia Negro, habéis realizado demasiadas cosas buenas y habéis sido abandonado por vuestra deidad. Habéis sido despojado de vuestros poderes y tenéis que sobrevivir lo mejor que podáis.~
+
+@3400=~Instalar kit de luchador Filo del Ocaso (by ronin69hof, ronin69hof@gmail.com)~
+@3401=~filo del ocaso~
+@3402=~Filo del Ocaso~
+@3403=~FILO DEL OCASO: Los Filos del Ocaso están entre el lanzador de conjuros y el guerrero, combinando el poder de la magia con el combate mano a mano.
+
+Un estudiante de las antiguas técnicas élficas del lanzamiento de conjuros, el Filo del Ocaso combina el lanzamiento arcano con la habilidad de combate de un luchador.
+
+Mientras que la habilidad para lanzar conjuros arcanos con armaduras era originalmente de los elfos, los secretos milenarios de los Filos del Ocaso se han diseminado por las otras razas y hoy día un miembro de cualquier raza puede ser un Filo del Ocaso.
+
+VENTAJAS:
+
+- A partir del nivel 4, pueden lanzar Escudo Entrópico y Proyectil Mágico una vez al día cada uno. Obtienen un uso adicional a los niveles 8 y 12. Escudo Entrópico forma un residuo mágico que provoca una ligera protección contra todas los ataques a distancia. El escudo tiene un 20% de probabilidades de alejar un ataque de proyectil del lanzador. Esto dura 5 asaltos por cada cuatro niveles de lanzador.
+- A partir del nivel 7, pueden lanzar Flecha Ácida de Melf una vez al día. Obtienen un uso adicional a los niveles 14 y 20.
+- A partir del nivel 8, pueden lanzar Eliminar Magia y Celeridad una vez al día cada uno. Obtienen un usu adicional a nivel 12.
+- A partir del nivel 12, pueden lanzar Malisón Mayor y Piel Pétrea una vez al día cada uno. Obtienen un uso adicional a nivel 16.
+- A partir del nivel 16, pueden lanzar Brecha y Filo Fantasmal una vez al día cada uno. Obtienen un uso adicional a nivel 20.
+- Pueden obtener como habilidad de alto nivel Transformación de Tenser, Manto o Espada de Mordenkainen, utilizables una vez al día cada una.
+
+DESVENTAJAS:
+
+- Sólo pueden obtener hasta dos casillas de talento marcial en armas.
+- No pueden ser de clase dual.
+- No pueden usar arcos o armas a distancia.
+- No pueden utilizar armaduras mejores que las laminadas.
+- No pueden ser de alineamiento Maligno.~
+@3404=~Escudo Entrópico~
+@3405=~Escudo Entrópico (Abjuración)
+Nivel: 1
+Duración: 5 asaltos/4 niveles
+Tiempo de lanzamiento: 1
+Área de efecto: El lanzador de conjuros
+
+DESCRIPCIÓN:
+
+Este conjuro forma un residuo mágico que provoca una ligera protección contra todas los ataques a distancia. El escudo tiene un 20% de probabilidades de alejar un ataque de proyectil del lanzador. Esto dura 5 asaltos por cada cuatro niveles de lanzador.~
+@3406=~Habéis convocado un Escudo Entrópico~

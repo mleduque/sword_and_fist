@@ -1,0 +1,156 @@
+@1 = ~Naruszy³eœ kodeks Czarnego Stra¿nika, i zosta³eœ obdarty ze swych mocy. Zdychaj kmiocie.~
+@100   =~Udoskonalony mnich~
+@101   =~MNICH: Mnisi s¹ wojownikami d¹¿¹cymi do doskona³oœci zarówno przez czyny jak i kontemplacje. Ich g³ównym znakiem rozpoznawczym jest umiejêtnoœæ walki bez broni i zbroi. Dziêki swym rygorystycznym treningom, potrafi¹ uderzaæ równie mocno jakby byli uzbrojeni i jednoczeœnie szybciej ni¿ wojownicy z mieczami b¹dŸ toporami.
+
+Mimo i¿ mnisi nie rzucaj¹ zaklêæ, szkol¹ siê w korzystaniu ze specyficznej magii. Skupiaj¹ w sobie subteln¹ moc zwan¹ Ki, która pozwala im dokonywaæ niesamowitych czynów. Najbardziej znan¹ i popularn¹ zdolnoœci¹ mnichów jest umiejêtnoœæ og³uszenia przeciwnika za pomoc¹ go³ej piêœci. Wraz z nabywanym doœwiadczeniem i poznawan¹ moc¹, ich umiejêtnoœci Ki oraz naturalny talent rosn¹ daj¹c im coraz doskonalsz¹ kontrolê nad sob¹ i czasem - nad innymi.
+
+Mnisi musz¹ wybraæ któryœ spoœród praworz¹dnych charakterów.
+
+Zalety:
+- Otrzymuje premiê +2 do maksymalnych obra¿eñ wrêcz na poziomach: 1, 4, 8 i 12; oraz premiê +4 na poziomach: 16, 20 i 24.
+- Otrzymuje premiê +1 do minimalnych obra¿eñ wrêcz na poziomach: 12 i 24.
+- Otrzymuje dodatkow¹ 1/2 ataku wrêcz na rundê na ka¿de 3 poziomy (zaczynaj¹c od trzeciego, a koñcz¹c na 18 z 4 atakami na rundê).
+- Piêœci s¹ uznawane za broñ umagicznion¹ od 4 poziomu. Otrzymuj¹ umagicznienie +1 na 10 poziomie, +2 na 16 poziomie, +3 na 22 poziomie, +4 na 28 poziomie, +5 na 34 poziomie i +6 na 40.
+
+- Otrzymuje premiê +1 do wszystkich rzutów obronnych na poziomach 2-im i 9-tym.
+- Otrzymuje premiê +2 do rzutów obronnych przeciwko czarom na 3 poziomie.
+- Otrzymuje premiê +1 do klasy pancerza na ka¿de 5 poziomów (zaczynaj¹c od 5-ego).
+- Otrzymuje premiê +1 do klasy pancerza przeciwko pociskom na ka¿de 3 poziomy (zaczynaj¹c od 2-ego).
+- Otrzymuje premiê +1 do prêdkoœci ruchu na ka¿de 3 poziomy (zaczynaj¹c od 3-ego).
+- Otrzymuje odpornoœæ na choroby na 5 poziomie.
+- Otrzymuje odpornoœæ na trucizny na 11 poziomie.
+- Otrzymuje odpornoœæ na magiê równ¹ aktualnemu poziomowi +10 na 13 poziomie.
+- Otrzymuje odpornoœæ na uroki/dominacjê na 20 poziomie.
+- Otrzymuje odpornoœæ na niemagiczn¹ broñ na 20 poziomie.
+
+- Mo¿e korzystaæ z umiejêtnoœci "Grad ciosów". Po jej u¿yciu otrzymuje dodatkowy atak na rundê, lecz cierpi karê -4 do TraK0. Na 5 poziomie kara zostaje zredukowana do -3, -2 na 9 poziomie i -1 na 13 poziomie. 
+- Mo¿e korzystaæ raz dziennie na ka¿dy poziom ze zdolnoœci "Og³uszaj¹ca piêœæ". Po jej u¿yciu ka¿dy atak wykonany w nastêpnej rundzie og³usza trafionego przeciwnika który nie wykona rzutu obronnego. UWAGA: ta zdolnoœæ automatycznie modyfikuje standardowy atak mnicha i nie wymaga dodatkowego celowania.
+- Mo¿e korzystaæ raz dziennie ze zdolnoœci "Jednoœæ cia³a" od 7 poziomu. Po jej u¿yciu mnich leczy u siebie dwa punkty ¿ycia na ka¿dy poziom doœwiadczenia.
+- Mo¿e korzystaæ raz dziennie ze zdolnoœci "Dr¿¹ca piêœæ" od 15 poziomu. Nastêpny udany atak mnicha wprowadza niebezpieczne wibracje do cia³a przeciwnika, co mo¿e doprowadziæ do œmierci ofiary, która nie wykona rzutu obronnego przeciwko œmierci. UWAGA: ta zdolnoœæ automatycznie modyfikuje standardowy atak mnicha i nie wymaga dodatkowego celowania.
+- Mo¿e korzystaæ raz dziennie na ka¿dy poziom ze zdolnoœci "Pusta pow³oka" od 19 poziomu. Po jej u¿yciu mnich wkracza w stan eteryczny na czas 1 rundy staj¹c siê niewidzialny oraz niepodatny na wszelkie ataki, jednak nie mo¿e wtedy wyprowadzaæ samemu ¿adnych ataków.
+
+- Mo¿e korzystaæ z Krycia w cieniu i Cichego chodzenia.
+- Mo¿e korzystaæ z Wyszukiwania pu³apek.
+- Mo¿e korzystaæ z kap³añskich zwojów.
+
+Wady:
+- Mo¿e korzystaæ z ograniczonego zakresu broni: sztylet, krótki miecz, d³ugi miecz, katana, sejmitar/wakizashi/ninja-to, maczuga, strza³ki, proca.
+- Jest ograniczony do bieg³oœci (1 punkt) w wy¿ej wymienionych broniach.
+- Nie mo¿e korzystaæ z pancerzy ani tarcz.
+- Nie mo¿e walczyæ naraz dwoma broñmi.~
+@102   =~Og³uszaj¹ca piêœæ~
+@103   =~Jednoœæ cia³a~
+@104   =~Grad ciosów~
+@105   =~Pusta pow³oka~
+
+@3000 =~Zainstaluj Ostrze Klatwy (podklasa wojownika)~
+@3001 =~Ostrze kl¹twy~
+@3002 =~Ostrze kl¹twy~
+@3003 =~OSTRZE KL¥TWY: Dziêki umiejêtnemu po³¹czeniu walki broni¹ bia³¹ i mistycznej mocy, Ostrze kl¹twy jest niezwykle trudnym przeciwnikiem dla nieprzyzwyczajonych do tego stylu walki oponentów. Szuka przygód g³ównie dla zysku, mocy, presti¿u, w³adzy i bogactwa. Jest arogancki i samolubny, niekiedy nawet okrutny, i nawet najbardziej przyjazne Ostrze kl¹twy jest typowym egoist¹. Korzysta z magii jako wsparcia w walce i specjalizuje siê w rzucaniu kl¹tw oraz uroków na wrogów.
+
+Ostrze kl¹twy potrafi korzystaæ z magii nosz¹c pancerz, i nie mo¿e wybraæ dobrego charakteru.
+
+Zalety:
+- Otrzymuje premiê +1 do rzutów obronnych przeciwko czarom na 1 i 11 poziomie.
+- Mo¿e rzuciæ raz dziennie na ka¿de 5 poziomów czar Zag³ada.
+- Od 4 poziomu mo¿e raz dziennie rzuciæ Zauroczenie i Uœpienie. Na 8 poziomie wzrasta iloœæ czarów na dobê.
+- Od 7 poziomu mo¿e raz dziennie rzuciæ Wiêksze os³abienie. Na poziomach 14 i 20 wzrasta iloœæ czarów na dobê.
+- Od 8 poziomu mo¿e raz dziennie rzuciæ Niewidzialnoœæ i Lustrzane odbicia. Na 12 poziomie wzrasta iloœæ czarów na dobê.
+- Od 12 poziomu mo¿e raz dziennie rzuciæ Ochronê przed zwyk³ymi pociskami i Wampiryczny dotyk. Na 16 poziomie wzrasta iloœæ czarów na dobê.
+- Od 16 poziomu mo¿e raz dziennie rzuciæ Ulepszon¹ niewidzialnoœæ i Polimorfowanie innego. Na 20 poziomie wzrasta iloœæ czarów na dobê.
+
+Wady:
+- Jest ograniczony do zwyczajnej spejalizacji (2 punkty) w dowolnej broni.
+- TraK0 nie wzrasta na poziomach 4, 8, 12, 16 i 20.
+- Nie mo¿e dwuklasowaæ.
+
+Ostrze Kl¹twy mo¿e wybieraæ S³owa Mocy: Oœlepienie, Og³uszenie b¹dŸ Cisza jako zdolnoœci wysokopoziomowe, jakich mo¿e u¿ywaæ raz dziennie. Poza tym, ma dostêp do wszystkich zdolnoœci Wojownika.~
+
+@3100 =~Zainstaluj Szermierza (podklasa wojownika)~
+@3101 =~Szermierz~
+@3102 =~Szermierz~
+@3103 =~SZERMIERZ: Szermierz to typ wiecznie m³odego. uroczego zawadiaki z lœni¹cym rapierem w garœci. Najlepiej odnajduje siê w du¿ych miastach, jednak potrafi byæ imponuj¹cym wojownikiem zawsze i wszêdzie - przeciwnicy czêsto lekcewa¿¹ go ze wzglêdu na jego urocz¹ manierê i nutê nonszalancji nie wiedz¹c, i¿ ma³o kto potrafi dorównaæ mu w szermierce. Jego ataki s¹ szybkie i finezyjne, zaœ jego zwinnoœæ i sprawnoœæ wynagradza mu brak ciê¿kiego pancerza oraz du¿ej broni. Jako¿e Szermierz jest person¹ wyrazist¹ i bieg³¹ w retoryce, czêsto staje siê liderem dru¿yny... lub chocia¿ dru¿ynow¹ gadu³¹.
+
+Zalety:
+- Otrzymuje premiê +1 do TraK0, opóŸnienia oraz obra¿eñ na ka¿de 10 poziomów.
+- Otrzymuje premiê +1 do KP na ka¿de 5 poziomów.
+
+Wadz:
+- Jest ograniczony do wielkiego mistrzostwa (5 punktów) tylko w jednorêcznych mieczach. Wszystkie pozosta³e bronie, oraz styl walki broni¹ dwurêczn¹ s¹ ograniczone do bieg³oœci (1 punkt).
+- Jest ograniczony do lekkich pancerzy.~
+
+@3200=~Zainstaluj Piêœæ Prawa (podklasa wojownika)~
+@3201=~Piêœæ Prawa~
+@3202=~Piêœæ Prawa~
+@3203=~PIÊŒÆ PRAWA: Chocia¿ sprawiaj¹ wra¿enie skutecznych i brutalnych najemników, Piêœci s¹ tak naprawdê oddanymi s³ugami koœcio³ów - najczêœciej Iyachtu Xwima, syna Bane'a, wielkiego Tyrana. Przedstawiciele tej grupy odnajduj¹ siê czasem tak¿e w szeregach innych militarnych lub praworz¹dnych koœcio³ów-organizacji, takich chocia¿by jak wyznawcy Helma. £¹czy ich przekonanie. Œwiat to mroczne i okrutne miejsce, i jako rzecze doktryna Iyachtu, tylko silni mog¹ przetrwaæ poprzez w³adanie s³abszymi oraz wykuwaj¹c ¿elazne prawo z materii chaosu. Aby walczyæ z chaosem, Koœció³ utworzy³ t¹ elitarn¹ kompaniê i umo¿liwi³ wynajmowanie jej us³ug dla tych, którzy spe³niaj¹ odpowiednie wymagania (i którzy naturalnie zap³acili ciê¿kie pieni¹dze, potrzebne do postawienia silnej jednostki dobrze wyposa¿onych i wyszkolonych ludzi). Piêœci s¹ ju¿ s³awne ze swej brutalnoœci oraz faktu, ¿e pró¿no szukaæ równie lojalnych oraz skutecznych w niszczeniu anarchi i zamêtu oraz wprowadzaniu ¿elaznego porz¹dku najemników co Piêœci.
+
+Aby zostaæ Piêœci¹ Prawa, trzeba byæ Praworz¹dnym z³ym, Neutralnym z³ym b¹dŸ Praworz¹dnym neutralnym. Poza tym zobowi¹zuje ich wszechstronne szkolenie w wielu typach broni, co nie pozwala im na uzyskanie mistrzostwa w ¿adnej z nich.
+
+Zalety:
+- Otrzymuje premiê +1 do TraK0 na ka¿de 6 poziomów.
+- Otrzymuje premiê +1 do obra¿eñ na ka¿de 6 poziomów (zaczynaj¹c od 4-ego).
+- Od 7 poziomu mo¿e raz dziennie rzuciæ P³aszcz strachu. Na poziomach 14 i 20 wzrasta iloœæ czarów na dobê.
+
+Wady:
+- Jest ograniczony do zwyczajnej specjalizacji (2 punkty) w dowolnej broni.~
+
+@3300=~Zainstaluj Czarnego straznika (podklasa wojownika)~
+@3301=~Czarny stra¿nik~
+@3302=~Czarny stra¿nik~
+@3303=~CZARNY STRA¯NIK: Uosabia on z³o, jest kwintesencj¹ rycerza siej¹cego postrach wsród innych. Posiadaj¹cego w pe³ni zas³u¿on¹ z³¹ reputacjê.Wzbudza on powszechny strach, nazywany jest czasem upad³ym palladynem.  
+
+Uosabia on z³o. Jest kwintesencj¹ czarnego rycerza siej¹cego postrach wœród innych i w pe³ni zas³uguj¹cego na sw¹ reputacjê. Czêsto s³u¿y on mrocznym bóstwom i nawi¹zuje kontakty z demonami. Niektórzy ludzie zw¹ go Anty-paladynem ze wzglêdu na jego zupe³nie z³¹, zepsut¹ naturê. Porównanie do paladynów jest tu jednak nie na miejscu, jako¿e ci s³u¿¹ swemu bogu w imiê prawa i dobra oraz dla dobrobytu ca³ego spo³eczeñstwa - zaœ Stra¿nicy w s³u¿bie upad³emu panu szukaj¹ tylko poszerzenia w³asnej mocy.
+
+Czarni stra¿nicy mog¹ wybieraæ poœród z³ych charakterów.
+
+Zalety:
+- Mo¿e korzystaæ raz dziennie ze zdolnoœci Nak³adania r¹k, lecz¹c u siebie 2 punkty ¿ycia na ka¿dy poziom doœwiadczenia.
+- Mo¿e korzystaæ trzy razy dziennie ze zdolnoœci Ochrony przed dobrem oraz Wykrywania dobra. 
+- Od 5 poziomu mo¿e korzystaæ raz dziennie na ka¿de 6 poziomów ze zdolnoœci Zatrucie broni. Po jej u¿yciu ka¿de udane w nastêpnej rundzie trafienie wprowadza do krwiobiegu ofiary truciznê zadaj¹c¹ 1 punkt obra¿eñ na sekundê przez 4 rundy (3 punkty obra¿eñ w pierwszych 6 sekundach). Udany rzut obronny przeciwko truciznom zmniejsza obra¿enia do 12.
+- Od 7 poziomu mo¿e raz dziennie rzuciæ Animacjê umar³ego. Na poziomach 14 i 20 wzrasta iloœæ czarów na dobê.
+
+Wady:
+- Jest ograniczony do zwyczajnej specjalizacji (2 punkty) w dowolnej broni.
+- Nie mo¿e dwuklasowaæ.
+- Czarny stra¿nik którego reputacja wzros³a powy¿ej 14, lub który porzuci³ z³y charakter - zostaje porzucony przez swe bóstwo i traci dostêp do wszelkich mocy. Po tym, staje siê zwyczajnym wojownikiem, lecz jest nadal ograniczony do zwyczajnej specjalizacji w broni.
+
+Czarny stra¿nik poza standardowymi zdolnoœciami wysokopoziomowymi mo¿e tak¿e korzystaæz Przywo³ania upad³ego Devy.~
+@3304=~Nak³adanie r¹k~
+@3305=~Wykrywanie dobra~
+@3306=~Ochrona przed dobrem~
+@3307=~Eks-stra¿nik~
+@3308=~Eks-stra¿nik~
+@3309=~EKS-STRA¯NIK: Niegdyœ jako Czarny Stra¿nik wykona³eœ zbyt wiele dobrych uczynków i zosta³eœ opuszczony przez swe bóstwo. Zosta³eœ obdarty z wszelkiej mocy i pozostawiony na pastwê losu. Zdychaj.~
+
+@3400=~Zainstaluj Ostrze Zmierzchu (podklasa wojownika autorstwa ronina69hof, ronin69hof@gmail.com)~
+@3401=~Ostrze zmierzchu~
+@3402=~Ostrze zmierzchu~
+@3403=~OSTRZE ZMIERZCHU: Ostrze zmierzchu zaciera granicê pomiêdzy wojownikiem a czarodziejem, jednocz¹c magiczn¹ moc z bieg³oœci¹ w walce wrêcz. Jako adept staro¿ytnej szko³y elfiej magii, potrafi korzystaæ z zaklêæ na polu bitwy nie rezygnuj¹c z pancerza ani broni. Mimo i¿ niegdyœ sztuka ta zastrze¿ona by³a tylko dla elfów, dziœ przedstawiciel dowolnej rasy mo¿e staæ siê Ostrzem zmierzchu.
+
+Ostrze potrafi korzystaæ z magii nosz¹c lekki lub œredni pancerz, i nie mo¿e wybraæ z³ego charakteru.
+
+Zalety:
+- Od 4 poziomu mo¿e raz dziennie rzuciæ Magiczny Pocisk i Tarczê entropii. Od 8 poziomu mo¿e z nich korzystaæ dwa razy, a od 12 trzy razy dziennie. Na poziomach 8 i 12 wzrasta iloœæ czarów na dobê.
+- Tarcza entropii: Po rzuceniu zaklêcia Ostrze zmierzchu formuje magiczny dysk chroni¹cy przed atakami dystansowymi. Istnieje 20% szans na wch³oniêcie ataku przez tarczê. Zaklêcie trwa przez 5 rund na ka¿de 4 poziomy rzucaj¹cego.
+- Od 7 poziomu mo¿e raz dziennie rzuciæ Kwasow¹ strza³ê Melfa. Na poziomach 14 i 20 wzrasta iloœæ czarów na dobê.
+- Od 8 poziomu mo¿e raz dziennie rzuciæ Usuniêcie magii i Przyspieszenie. Na 12 poziomie wzrasta iloœæ czarów na dobê.
+- Od 12 poziomu mo¿e raz dziennie rzuciæ Kamienn¹ skórê i Wiêksze os³abienie. Na 16 poziomie wzrasta iloœæ czarów na dobê.
+- Od 16 poziomu mo¿e raz dziennie rzuciæ Wy³om i Widmowe ostrze. Na 20 poziomie wzrasta iloœæ czarów na dobê.
+
+Wady:
+- Jest ograniczony do zwyczajnej specjalizacji (2 punkty) w broni do walki wrêcz.
+- Nie mo¿e korzystaæ z ciê¿kich pancerzy.
+- Nie mo¿e dwuklasowaæ.
+- Nie mo¿e korzystaæ z broni dystansowej.
+
+
+Ostrze zmierzchu mo¿e wybieraæ zaklêcia Przemiana Tensera, Opoñcza b¹dŸ Miecz Mordenkainena jako zdolnoœci wysokopoziomowe, jakich mo¿e u¿ywaæ raz dziennie. Poza tym, ma dostêp do wszystkich zdolnoœci Wojownika.~
+@3404=~Tarcza entropii~
+@3405=~Tarcza entropii (Odrzucanie)
+Poziom: 1
+Obszar dzia³ania: rzucaj¹cy
+Czas trwania: 5 rund/4 poziomy
+Czas rzucania: 1
+
+Po rzuceniu zaklêcia uformowany zostaje magiczny dysk chroni¹cy czarodzieja przed atakami dystansowymi. Istnieje 20% szans na wch³oniêcie ataku przez tarczê. Zaklêcie trwa przez 5 rund na ka¿de 4 poziomy rzucaj¹cego.~
+@3406=~Przywo³a³eœ Tarczê Entropii~

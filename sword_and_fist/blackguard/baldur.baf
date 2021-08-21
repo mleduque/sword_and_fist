@@ -1,0 +1,65 @@
+IF
+  Kit(Player1,A#BLACKGUARD)
+OR(2)
+  !Alignment(Player1,MASK_EVIL)
+  ReputationGT(Player1,14)
+THEN
+RESPONSE #100
+  ActionOverride(Player1,AddKit(A#FBLACKGUARD))
+  DisplayString(Player1,@1)
+END
+
+IF
+  Kit(Player2,A#BLACKGUARD)
+OR(2)
+  !Alignment(Player2,MASK_EVIL)
+  ReputationGT(Player2,14)
+THEN
+RESPONSE #100
+  ActionOverride(Player2,AddKit(A#FBLACKGUARD))
+  DisplayString(Player2,@1)
+END
+
+IF
+  Kit(Player3,A#BLACKGUARD)
+OR(2)
+  !Alignment(Player3,MASK_EVIL)
+  ReputationGT(Player3,14)
+THEN
+RESPONSE #100
+  ActionOverride(Player3,AddKit(A#FBLACKGUARD))
+  DisplayString(Player3,@1)
+END
+
+IF
+  Kit(Player4,A#BLACKGUARD)
+OR(2)
+  !Alignment(Player4,MASK_EVIL)
+  ReputationGT(Player4,14)
+THEN
+RESPONSE #100
+  ActionOverride(Player4,AddKit(A#FBLACKGUARD))
+  DisplayString(Player4,@1)
+END
+
+IF
+  Kit(Player5,A#BLACKGUARD)
+OR(2)
+  !Alignment(Player5,MASK_EVIL)
+  ReputationGT(Player5,14)
+THEN
+RESPONSE #100
+  ActionOverride(Player5,AddKit(A#FBLACKGUARD))
+  DisplayString(Player5,@1)
+END
+
+IF
+  Kit(Player6,A#BLACKGUARD)
+OR(2)
+  !Alignment(Player6,MASK_EVIL)
+  ReputationGT(Player1,14)
+THEN
+RESPONSE #100
+  ActionOverride(Player6,AddKit(A#FBLACKGUARD))
+  DisplayString(Player6,@1)
+END

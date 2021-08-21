@@ -1,0 +1,157 @@
+@1 = ~Hai violato il codice di comportamento della Guardia Nera e sei stato privato dei tuoi poteri dalla tua divinità.~
+@100   =~Monk Remix~
+@101   =~MONACO: I Monaci sono guerrieri che puntano alla perfezione tramite la contemplazione e l'azione. La caratteristica principale di un monaco è quella di combattere senz'armi e senz'armature. Grazie al suo rigoroso addestramento, può colpire duramente come se fosse armato e più velocemente di un guerriero con la spada.
+
+Sebbene un monaco non possa lanciare incantesimi, possiede alcuni poteri magici. E' in grado di incanalare un'energia impercettibile, chiamata ki, che gli permette di compiere azioni stupefacenti. Il talento più conosciuto di un monaco è la capacità di stordire un avversario con un colpo senz'armi. Non appena un monaco ottiene esperienza e potere, le sue terrene e orientali abilità con il ki crescono, dandogli più e più potere su se stesso e, talvolta, a scapito di altri.
+
+I Monaci possono essere di qualsiasi allineamento legale.
+
+Vantaggi:
+- Ottiene un bonus +2 al danno massimo senz'armi al livello 1, 4, 8 e 12 e un bonus +4 al livello 16, 20 e 24.
+- Ottiene un bonus +1 al danno minimo al livello 12 e 24.
+- Ottiene 1/2 attacco extra senz'armi per round ogni 3 livelli (inizia al livello 3 e finisce al livello 18 per un totale di 4 attacchi senz'armi per round).
+- I pugni sono considerati armi magiche al livello 4, +1 al livello 10, +2 al livello 16, +3 al livello 22, +4 al livello 28, +5 al livello 34 e +6 al livello 40.
+
+- Ottiene un bonus +1 a tutti i tiri salvezza al livello 2 e 9.
+- Ottiene un bonus +2 ai tiri salvezza contro incantesimi al livello 3.
+- Ottiene un bonus +1 alla Classe Armatura ogni 5 livelli (inizia al livello 5).
+- Ottiene un bonus +1 alla Classe Armatura contro i proiettili ogni 3 livelli (inizia al livello 2).
+- Ottiene un bonus +1 al movimento ogni 3 livelli (inizia al livello 3).
+- Ottiene l'immunità alle malattie al livello 5.
+- Ottiene l'immunità al veleno al livello 11.
+- Ottiene una resistenza alla magia pari al suo attuale livello + 10 al livello 13.
+- Ottiene l'immunità allo charme al livello 20.
+- Ottiene l'immunità alle armi non magiche al livello 20.
+
+- Può utilizzare l'abilità "Raffica di Colpi" a piacere. Il monaco ottiene un attacco addizionale per round, ma subisce anche una penalità di -4 alla THAC0. Questa penalità è ridotta a -3 al quinto livello, a -2 al nono livello, a -1 al 13 livello.
+- Può utilizzare l'abilità "Colpo Stordente" una volta al giorno per livello. Tutti gli attacchi compiuti dal monaco il round successivo costringono il bersaglio ad effettuare un tiro salvezza o essere stordito. NOTA: questa abilità speciale modifica automaticamente il normale attacco di un monaco, quindi non c'è bisogno di selezionare un bersaglio.
+- Può utilizzare l'abilità "Integrità del Corpo" una volta al giorno al settimo livello. Il monaco cura un numero doppio di punti ferita rispetto al suo attuale livello.
+- Può utilizzare l'abilità "Palmo Tremante" una volta al giorno al quindicesimo livello. Il successivo attacco del monaco in mischia portato a segno produce delle vibrazioni nel corpo del bersaglio, costringendolo ad effettuare un tiro salvezza contro la morte o perire. NOTA: questa abilità speciale modifica automaticamente il normale attacco di un monaco, quindi non c'è bisogno di selezionare un bersaglio.
+- Può utilizzare l'abilità "Corpo Vuoto" una volta al giorno per livello al diciannovesimo livello. Il monaco assume una forma eterea per un round, diventando invisibile e immune a tutti i danni, ma non può compiere alcun attacco.
+
+- Può Nascondersi nelle Ombre e Muoversi Silenziosamente.
+- Può trovare trappole.
+- Può leggere le pergamene da chierico.
+
+Svantaggi:
+- Non può indossare armature.
+- Non può utilizzare scudi.
+- Può utilizzare solo le armi ad una mano permesse ai ladri.
+- Non può essere competente nello stile a due armi.
+- Può essere solo competente con le armi che gli sono permesse.~
+@102   =~Colpo Stordente~
+@103   =~Integrità del Corpo~
+@104   =~Raffica di Colpi~
+@105   =~Corpo Vuoto~
+
+@3000 =~Installa kit del guerriero 'Lama Maledetta'~
+@3001 =~lama maledetta~
+@3002 =~Lama Maledetta~
+@3003 =~LAMA MALEDETTA: Combinando il dinamico potere delle arti marziali e della forza arcana, la Lama Maledetta rappresenta una sfida mortale per gli avversari non abituati ad un simile nemico. Questi guerrieri intraprendono l'avventura per il proprio beneficio personale, per un guadagno che può essere potere, prestigio, ricchezza o per tutti e tre i motivi. La Lama Maledetta ha un atteggiamento egoista, a volte persino crudele e, sebbene all'apparenza possa sembrare amichevole, solitamente agisce per il proprio interesse. La loro magia li aiuta nel combattimento e si specializzano nel maledire i nemici.
+
+Le Lame Maledette sono in grado di utilizzare la magia mentre indossano l'armatura e possono essere di qualsiasi allineamento tranne che buono.
+
+Vantaggi:
+-  Ottiene un bonus +1 ai tiri salvezza contro gli incantesimi. Un bonus addizionale +1 si ottiene al livello 11.
+-  Può lanciare "Condanna" una volta al giorno ogni cinque livelli.
+-  Dal livello 4, può lanciare "Charma Persone" e "Sonno" una volta al giorno. Un ulteriore uso si ottiene al livello 8.
+-  Dal livello 7, può lanciare "Penalità Maggiore" una volta al giorno. Un ulteriore uso si ottiene al livello 14 e 20.
+-  Dal livello 8, può lanciare "Invisibilità" e "Immagine Speculare" una volta al giorno. Un ulteriore uso si ottiene al livello 12.
+-  Dal livello 12, può lanciare "Protezione dai Proiettili Normali" e "Tocco del Vampiro" una volta al giorno. Un ulteriore uso si ottiene al livello 16.
+-  Dal livello 16, può lanciare "Invisibilità Potenziata" e "Autometamorfosi" una volta al giorno. Un ulteriore uso si ottiene al livello 20.
+
+Svantaggi:
+-  Può solo specializzarsi (2 stelle) nelle armi.
+-  La THAC0 non aumenta ai livelli 4, 8, 12, 16 e 20.
+-  Non può essere biclassato.
+
+Una Lama Maledetta può scegliere gli incantesimi da mago "Parola del Potere: Cecità", "Silenzio" o "Lentezza" come HLA, ognuno utilizzabile una volta al giorno, in aggiunta alla normale scelta disponibile al guerriero. Vengono lanciati nello stesso modo degli altri loro incantesimi.~
+
+@3100 =~Installa kit del guerriero 'Duellante'~
+@3101 =~duellante~
+@3102 =~Duellante~
+@3103 =~DUELLANTE: Il Duellante è l'eroe allegro e fortunato con la battuta pronta e la stoccata brillante. E' più felice quando si trova in una grande città, ma può rivelarsi un abile guerriero ovunque; spesso i nemici lo sottovalutano per i suoi modi eleganti e non si rendono conto che può sostenere un combattimento in mischia come chiunque altro. Attaccando con un marchio di velocità e grazia, l'agilità del Duellante compensa il suo disdegno per le armature pesanti o per le armi di grandi dimensioni. Il Duellante, dal momento che è brillante e dall'ottima parlantina, spesso diventa la guida del party... O almeno il portavoce del leader.
+
+I Duellanti si trovano di tutte le razze e allineamenti.
+
+Vantaggi:
+-  Ottiene un bonus +1 al fattore velocità dell'arma, alla THAC0 e al danno ogni 10 livelli.
+-  Ottiene un bonus +1 alla classe armatura ogni cinque livelli.
+
+Svantaggi:
+-  Maestria Superiore solo nello stile a una mano e nelle armi con la lama. Tutte le altre armi e lo stile a due armi sono limitate ad un solo grado di competenza.
+-  Non può indossare armature più pesanti del cuoio borchiato.~
+
+@3200=~Installa kit del guerriero 'Pugno dell'Ordine'~
+@3201=~pugno dell'ordine~
+@3202=~Pugno dell'Ordine~
+@3203=~PUGNO DELL'ORDINE: Sebbene molti vedano i membri del Pugno dell'Ordine come efficienti (anche se brutali) mercenari, di fatto essi sono dei templari che hanno giurato il loro servizio a divinità spietate - in genere a Iyachtu Xvim, figlio di Bane, Signore della Tirannia. A volte questi individui trovano il loro credo anche in divinità della guerra e legali come Helm. Il mondo è un posto buio e spietato, o così sostiene la Chiesa di Xvim, dove il forte sopravvive comandando i deboli e forgiando l'ordine dal caos. A sostegno del loro dogma, la Chiesa istituì questo gruppo elitario di templari e li rese disponibili per essere assunti da coloro le cui cause soddisfino gli obiettivi ultimi della Chiesa (e che potrebbero, naturalmente, permettersi di pagare le ingenti decime necessarie per mantenere una formidabile unità di uomini e donne ben armati e addestrati). I membri del Pugno dell'Ordine sono famigerati per la loro efficiente brutalità: da nessuna parte si incontrerà un datore di lavoro bisognoso di sostegno militare che si occupi di assicurarsi che il dogma dell'ordine prevalga sulle forze dell'anarchia e della confusione.
+
+Il Pugno dell'Ordine dev'essere di allineamento Legale Malvagio, Neutrale Malvagio o Legale Neutrale. Sacrificano la padronanza di ogni singola arma a favore di un alto ed efficiente uso di molti tipi di armi, scelta che permette loro di agire in maniera più appropriata a seconda della situazione.
+
+Vantaggi:
+-  Ottiene un bonus +1 alla THAC0 ogni 6 livelli.
+-  Dal livello 4, ottiene un bonus +1 al danno ogni 6 livelli.
+-  Dal livello 7, può lanciare "Manto di Paura" una volta al giorno. Un ulteriore uso si ottiene al livello 14 e 20.
+
+Svantaggi:
+-  Può solo specializzarsi (2 stelle) nelle armi.~
+
+@3300=~Installa kit del guerriero 'Guardia Nera'~
+@3301=~guardia nera~
+@3302=~Guardia Nera~
+@3303=~GUARDIA NERA: La Guardia Nera incarna il male. La quintessenza del Cavaliere Nero, questo losco individuo ha una reputazione malvagia che è davvero meritata. Accordandosi con i demoni e servendo divinità oscure, la guardia nera è temuta da tutti. Alcuni chiamano queste figure "Anti-Paladini" per la loro natura completamente malvagia.
+
+La differenza sostanziale con i Paladini è una sola: il Paladino serve la sua divinità in nome della Legge e del Bene, per il beneficio di tutti i civili; le Guardie Nere, invece, eseguono i comandi delle loro divinità cadute e cercano solo di aumentare il loro potere.
+
+Le Guardie Nere possono essere di qualsiasi allineamento malvagio.
+
+Vantaggi:
+-  Può usare "Imposizione delle Mani" su se stesso una volta al giorno, curando la Guardia Nera di 2 punti ferita per livello.
+-  Può lanciare "Individuazione del Bene" e "Protezione dal Bene" 3 volte al giorno. Questi incantesimi sono uguali a "Individuazione del Male" e "Protezione dal Male", tranne per il fatto che riguardano creature benigne.
+-  Dal livello 5, può cospargere la sua arma con del veleno una volta al giorno ogni sei livelli. Gli attacchi compiuti nel round successivo inietteranno del veleno nel bersaglio, causandogli un punto di danno al secondo per 24 secondi (3 danni per i primi 6 secondi). Un tiro salvezza contro il veleno limita i danni ad un totale di 12.
+-  Dal livello 7, può lanciare "Animare i morti" una volta al giorno. Un ulteriore uso si ottiene al livello 14 e 20.
+
+Svantaggi:
+-  Può solo specializzarsi (2 stelle) nelle armi.
+-  Non può essere biclassato.
+-  Una Guardia Nera la cui reputazione superi 14 o che cessi di essere di allineamento malvagio viene per sempre maledetta dalla sua divinità e perde tutti i suoi poteri speciali. In tal caso viene considerato come un Guerriero, sebbene sia ancora limitato a specializzarsi solamente nelle armi.
+
+La tabella HLA della Guardia Nera è la stessa dei Guerrieri, con l'aggiunta di "Evoca Deva Caduto".~
+@3304=~Imposizione della Mani~
+@3305=~Individuazione del Bene~
+@3306=~Protezione dal Bene~
+@3307=~ex-guardia nera~
+@3308=~Ex-Guardia Nera~
+@3309=~EX-GUARDIA NERA: In passato una Guardia Nera, hai compiuto troppe opere di bene e sei stato abbandonato dalla tua divinità. Hai perso i tuoi poteri e sei stato lasciato a sopravvivere come meglio puoi.~
+
+@3400=~Installa kit del guerriero 'Lama Crepuscolare' (by ronin69hof, ronin69hof@gmail.com)~
+@3401=~lama crepuscolare~
+@3402=~Lama Crepuscolare~
+@3403=~LAMA CREPUSCOLARE: La Lama Crepuscolare rende indistinta la linea di confine tra un incantatore e un guerriero, dal momento che combina il potere della magia con l'abilità nel combattimento. Studiando le antiche tecniche degli elfi nel lancio degli incantesimi, la Lama Crepuscolare coniuga gli incantesimi arcani con le abilità di un guerriero. Mentre la capacità di lanciare magie arcane in armatura hanno avuto origine con gli elfi, nel corso dei millenni i segreti della Lama Crepuscolare sono stati diffusi alle altre razze: i membri di ciascuna di esse, infatti, oggi possono diventare Lame Crepuscolari.
+
+Le Lame Crepuscolari sono in grado di utilizzare la magia mentre indossano armature non più pesanti della cotta di maglia e possono essere di qualsiasi allineamento tranne che malvagio.
+
+Vantaggi:
+-  Dal livello 4, può lanciare "Scudo dell'Entropia" e "Dardo Incantato" una volta al giorno. Un uso ulteriore si ottiene al livello 8 e 12. Lo Scudo dell'Entropia prende forma dai residui magici e fornisce una discreta protezione da tutti gli attacchi a distanza. Lo scudo ha il 20% di possibilità di deviare il proiettile al lanciatore. L'incantesimo dura 5 round ogni 4 livelli del lanciatore.
+-  Dal livello 7, può lanciare "Freccia Acida di Melf" una volta al giorno. Un uso ulteriore si ottiene al livello 14 e 20.
+-  Dal livello 8, può lanciare "Rimuovi Magie" e "Velocità" una volta al giorno. Un uso ulteriore si ottiene al livello 12.
+-  Dal livello 12, può lanciare "Penalità Maggiore" e "Pelle di Pietra" una volta al giorno. Un uso ulteriore si ottiene al livello 16.
+-  Dal livello 16, può lanciare "Breccia" e "Lama Fantasma" una volta al giorno. Un uso ulteriore si ottiene al livello 20.
+
+Svantaggi:
+-  Può solo specializzarsi (2 stelle) nelle armi.
+-  Non può essere biclassato.
+-  Non può utilizzare archi o armi da lancio.
+-  Non può indossare armature più pesanti della cotta di maglia.
+
+Una lama Crepuscolare può scegliere gli incantesimi da mago "Trasformazione di Tenser", "Manto" o "Spada di Mordenkainen" come HLA, ognuno utilizzabile una volta al giorno, in aggiunta alla normale scelta disponibile al guerriero. Vengono lanciati nello stesso modo degli altri loro incantesimi.~
+@3404=~Scudo dell'Entropia~
+@3405=~Scudo dell'Entropia (Abiurazione)
+Livello: 1
+Area d'effetto: Il lanciatore
+Durata: 5 round ogni 4 livelli
+Tempo di Lancio: 1
+
+Questo incantesimo prende forma dai residui magici e fornisce una discreta protezione da tutti gli attacchi a distanza. Lo scudo ha il 20% di possibilità di deviare il proiettile al lanciatore. L'incantesimo dura 5 round ogni 4 livelli del lanciatore.~
+@3406=~Hai evocato uno Scudo dell'Entropia~
